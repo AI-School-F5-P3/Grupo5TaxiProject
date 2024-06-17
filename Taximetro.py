@@ -2,6 +2,7 @@
 import time
 from datetime import datetime
 
+
 #Proceso de Bienvenida:
 
 def bienvenida_usuario():
@@ -16,9 +17,23 @@ class Taximetro:
         self.tarifa_base = tarifa_base
         self.tarifa_por_minuto_movimiento = tarifa_por_minuto_movimiento
         self.tarifa_por_minuto_parado = tarifa_por_minuto_parado
+        self.tiempo_transcurrido = tiempo_transcurrido
 
+        
+    def carrera(self):
+        estado = int(input("Ingresar '1' para comenzar:"))
+        Total = 0
+        while estado == 1:
+            taxi = "en movimiento"
+            if taxi == "en movimiento":
+                Total == self.tiempo_transcurrido * self.tarifa_por_minuto_movimiento
+                print(f"El total de su carrera son: {Total} euros")
+            else :
+                Total == self.tiempo_transcurrido * self.tarifa_por_minuto_parado
+                print(f"El total de su carrera son: {Total} euros")
 
-
+  
+    '''
     local_time=0
     formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
     epoch_time = time.time()
@@ -32,8 +47,7 @@ class Taximetro:
     def iniciar(self):
         print("La carrera ha comenzado")
         self.inicio_carrera = self.ahora()
-        print(f"El horario de inicio es: {self.inicio_carrera}")
-
+        print(f"El horario de inicio es: {self.inicio_carrera}")'''
     
     def detener(self):
         pass
