@@ -10,10 +10,10 @@ class Taximetro:
     self.tarifa_parado = 0
     self.tarifa_movimiento = 0
     self.tarifa_total = 0
-
+    self.tarifa_base = 2.5
+  
   def iniciar_carrera(self):
-    """Inicia la carrera del taxi."""
-    print("Carrera en espera...")
+    print ("Inicia la carrera del taxi.")
     input("Presiona Enter para iniciar la carrera: ")
     self.tiempo_inicio = time.time()
 
@@ -25,7 +25,7 @@ class Taximetro:
     elif estado_taxi == "p":
       self.actualizar_parado()
     else:
-      print("Estado no válido. Ingrese 'm' (movimiento) o 'p' (parado).")
+      print("Fin de la carrera.")
 
   def actualizar_movimiento(self):
     """Actualiza el tiempo y la tarifa en movimiento."""
@@ -38,15 +38,15 @@ class Taximetro:
   def actualizar_parado(self):
     """Actualiza el tiempo y la tarifa parado."""
     tiempo_actual = time.time()
-    tiempo_transcurrido = tiempo_actual - self.tiempo_inicio
-    self.tiempo_parado += tiempo_transcurrido
-    self.tarifa_parado += tiempo_transcurrido * 0.02
+    self.tiempo_transcurrido = tiempo_actual - self.tiempo_inicio
+    self.tiempo_parado += self.tiempo_transcurrido
+    self.tarifa_parado += self.tiempo_transcurrido * 0.02
     self.tiempo_inicio = tiempo_actual
 
   def finalizar_carrera(self):
     """Calcula y muestra la tarifa total de la carrera."""
-    self.tarifa_total = self.tarifa_parado + self.tarifa_movimiento
-    print(f"El tiempo transcurrido fue de: {self.tiempo_transcurrido} y la tarifa total de la carrera es de: {self.tarifa_total:.2f} €")
+    self.tarifa_total = self.tarifa_parado + self.tarifa_movimiento + self.tarifa_base
+    print(f"El tiempo transcurrido fue de: {round(self.tiempo_transcurrido,2)} y la tarifa total de la carrera es de: {self.tarifa_total:.2f} €")
 
 def main():
   """Función principal que crea y utiliza la clase Taximetro."""
@@ -54,7 +54,7 @@ def main():
   taximetro.iniciar_carrera()
 
   while True:
-    estado_taxi = input("¿El taxi está en movimiento (m), parado (p)? ")
+    estado_taxi = input("¿El taxi está en movimiento (m), parado (p) o finalizar (f)? ")
     taximetro.actualizar_estado(estado_taxi)
 
     if estado_taxi not in ("m", "p"):
