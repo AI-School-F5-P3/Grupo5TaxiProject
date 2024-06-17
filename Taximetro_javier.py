@@ -46,7 +46,7 @@ class Taximetro:
   def finalizar_carrera(self):
     """Calcula y muestra la tarifa total de la carrera."""
     self.tarifa_total = self.tarifa_parado + self.tarifa_movimiento
-    print(f"La tarifa total de la carrera es de: {self.tarifa_total:.2f} €")
+    print(f"El tiempo transcurrido fue de: {self.tiempo_transcurrido} y la tarifa total de la carrera es de: {self.tarifa_total:.2f} €")
 
 def main():
   """Función principal que crea y utiliza la clase Taximetro."""
@@ -54,7 +54,7 @@ def main():
   taximetro.iniciar_carrera()
 
   while True:
-    estado_taxi = input("¿El taxi está en movimiento (m) o parado (p)? ")
+    estado_taxi = input("¿El taxi está en movimiento (m), parado (p)? ")
     taximetro.actualizar_estado(estado_taxi)
 
     if estado_taxi not in ("m", "p"):
