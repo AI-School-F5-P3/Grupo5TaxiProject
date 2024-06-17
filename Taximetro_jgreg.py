@@ -17,8 +17,6 @@ class Taximetro:
         self.tarifa_por_minuto_movimiento = tarifa_por_minuto_movimiento
         self.tarifa_por_minuto_parado = tarifa_por_minuto_parado
 
-
-
     local_time=0
     formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
     epoch_time = time.time()
@@ -26,12 +24,12 @@ class Taximetro:
 
     def ahora(self):
         now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        return current_time
+        pass
 
     def iniciar(self):
-        print("La carrera ha comenzado")
-        self.inicio_carrera = self.ahora()
+        print("Taxi en espera de iniciar viaje")
+        input ("Presiona Enter para iniciar la carrera")
+        self.inicio_carrera = time.time()
         print(f"El horario de inicio es: {self.inicio_carrera}")
 
     
