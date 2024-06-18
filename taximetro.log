@@ -1,0 +1,50 @@
+2024-06-18 15:22:31,512 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:22:31,514 - root - INFO - Taxímetro restablecido.
+2024-06-18 15:22:31,514 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-18 15:22:31,515 - root - INFO - Sesión inicializada.
+2024-06-18 15:22:54,235 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:22:54,237 - root - INFO - Carrera iniciada.
+2024-06-18 15:22:54,238 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-18 15:23:08,997 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:23:08,999 - root - INFO - Tarifa actualizada.
+2024-06-18 15:23:08,999 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-18 15:23:09,000 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-18 15:23:13,984 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:23:13,986 - root - INFO - Tarifa actualizada.
+2024-06-18 15:23:13,986 - root - INFO - El taxi se ha parado.
+2024-06-18 15:23:13,986 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-18 15:23:15,167 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:23:15,170 - root - INFO - Tarifa actualizada.
+2024-06-18 15:23:15,170 - root - INFO - Carrera finalizada. Importe total:3.07 €
+2024-06-18 15:23:15,170 - root - INFO - Taxímetro restablecido.
+2024-06-18 15:23:15,170 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-18 15:23:36,983 - root - INFO - Menu seleccionado: Ver Log
+2024-06-18 15:30:37,921 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:30:37,921 - root - INFO - Taxímetro restablecido.
+2024-06-18 15:30:37,921 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-18 15:30:37,922 - root - INFO - Sesión inicializada.
+2024-06-18 15:30:48,602 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:30:48,603 - root - INFO - Carrera iniciada.
+2024-06-18 15:30:48,603 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-18 15:30:56,891 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:30:56,893 - root - INFO - Tarifa actualizada.
+2024-06-18 15:30:56,893 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-18 15:30:56,893 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-18 15:31:02,043 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:31:02,044 - root - INFO - Tarifa actualizada.
+2024-06-18 15:31:02,045 - root - INFO - El taxi se ha parado.
+2024-06-18 15:31:02,045 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-18 15:31:04,079 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:31:04,081 - root - INFO - Tarifa actualizada.
+2024-06-18 15:31:04,081 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-18 15:31:04,081 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-18 15:31:05,363 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:31:05,365 - root - INFO - Tarifa actualizada.
+2024-06-18 15:31:05,365 - root - INFO - El taxi se ha parado.
+2024-06-18 15:31:05,365 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-18 15:31:07,664 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-18 15:31:07,666 - root - INFO - Tarifa actualizada.
+2024-06-18 15:31:07,666 - root - INFO - Carrera finalizada. Importe total:3.07 €
+2024-06-18 15:31:07,666 - root - INFO - Taxímetro restablecido.
+2024-06-18 15:31:07,666 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-18 15:31:30,845 - root - INFO - Menu seleccionado: Ver Log
