@@ -1,5 +1,4 @@
 import time
-
 from datetime import datetime
 import streamlit as st
 
@@ -7,7 +6,7 @@ class Taximetro:
     """Clase que simula el funcionamiento de un taxímetro."""
 
     def __init__(self):
-        self.tarifa_por_minuto_movimiento = 3
+        self.tarifa_por_minuto_movimiento = 3.0
         self.tarifa_por_minuto_parado = 1.2
         self.tarifa_base = 2.5
         self.reset()
@@ -15,11 +14,12 @@ class Taximetro:
     def reset(self):
         self.en_marcha = False
         self.en_movimiento = False
-        self.tarifa_total = self.tarifa_base
+        self.tarifa_total = 0
         self.hora_inicio = None
         self.ultima_hora = None
         self.tiempo_movimiento = 0
         self.tiempo_parado = 0
+
 
     def iniciar(self):
         # Comienza la carrera en estado parado, ya tarifica 
@@ -46,9 +46,9 @@ class Taximetro:
     def finalizar_carrera(self):
         if self.en_marcha:
             self.actualizar_tarifa()
-            st.session_state.tarifa_final = self.tarifa_total  # Guardar la tarifa final en session_state
-            st.session_state.messages.append(
-                f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {self.tarifa_total:.2f} €")
+            st.session_state.tarifa_final = self.tarifa_total + self.tarifa_base # cambio al actualizar precios
+            st.session_state.messages.append(f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {st.session_state.tarifa_final:.2f} €")
+               
             self.reset()
         else:
             st.session_state.messages.append(f"{ahora()} - No hay carrera en curso para finalizar.")
@@ -65,6 +65,14 @@ class Taximetro:
                 self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_parado / 60)
             self.ultima_hora = hora_actual
 
+    def cambiar_precios(self, nueva_tarifa_movimiento, nueva_tarifa_parado, nueva_tarifa_base):
+        self.tarifa_por_minuto_movimiento = nueva_tarifa_movimiento
+        self.tarifa_por_minuto_parado = nueva_tarifa_parado
+        self.tarifa_base = nueva_tarifa_base
+        self.reset()  # Llamar a reset después de cambiar las tarifas
+        st.session_state.messages.append(f"{ahora()} - Tarifas Actualizadas: Movimiento: {self.tarifa_por_minuto_movimiento} €/min, Parado: {self.tarifa_por_minuto_parado } €/min, Base: { self.tarifa_base} €")
+
+
 def ahora():
     ahora = datetime.now()
     hora_actual = ahora.strftime("%H:%M:%S")
@@ -73,8 +81,8 @@ def ahora():
 def limpiar_mensajes():
     st.session_state.messages = []
 
+
 def main():
-     
     st.markdown(
         """
         <h1 style='text-align: center;'>Taxímetro - G5</h1>
@@ -83,37 +91,64 @@ def main():
     )
     
     # Menú desplegable en la barra lateral
-    menu_options = [ "Seleccione Opción", "Cambiar Tarifas", "Ver Log", "Ayuda"]
+    menu_options = ["Seleccione Opción", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
     menu_selection = st.sidebar.selectbox("Menú", menu_options)
 
     if 'taximetro' not in st.session_state:
         st.session_state.taximetro = Taximetro()
         st.session_state.messages = []
         st.session_state.tarifa_final = 0.0  # Inicializar la variable para la tarifa final
+        st.session_state.logged_in = False  # Estado de login
 
-    col1, col2, col3, col4 = st.columns(4)
+    if not st.session_state.logged_in:
+        if menu_selection == "Login":
+            with st.form("form_login"):
+                usuario = st.text_input("Usuario")
+                password = st.text_input("Password", type="password")
+                submit_button = st.form_submit_button(label="Login")
+                if submit_button:
+                    if usuario == "user" and password == "password":
+                        st.session_state.logged_in = True
+                        st.success("Login exitoso")
+                    else:
+                        st.session_state.logged_in = False
+                        st.error("Usuario o password incorrectos")
+        else:
+            st.warning("Debe realizar el login para utilizar el taxímetro.")
+    else:
+        if menu_selection == "Cambiar Precios":
+            with st.form("form_cambiar_precios"):
+                nueva_tarifa_movimiento = st.number_input("Nueva Tarifa por Minuto en Movimiento (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_por_minuto_movimiento))
+                nueva_tarifa_parado = st.number_input("Nueva Tarifa por Minuto Parado (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_por_minuto_parado))
+                nueva_tarifa_base = st.number_input("Nueva Tarifa Base (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_base))
+                submit_button = st.form_submit_button(label="Actualizar Tarifas")
+                if submit_button:
+                    st.session_state.taximetro.cambiar_precios(nueva_tarifa_movimiento, nueva_tarifa_parado, nueva_tarifa_base)
+                    st.success("Tarifas actualizadas correctamente.")
+        else:
+            col1, col2, col3, col4 = st.columns(4)
 
-    with col1:
-        if st.button("Iniciar Carrera"):
-            st.session_state.taximetro.iniciar()
+            with col1:
+                if st.button("Iniciar Carrera"):
+                    st.session_state.taximetro.iniciar()
 
-    with col2:
-        if st.button("Taxi en movimiento"):
-            st.session_state.taximetro.mover()
+            with col2:
+                if st.button("Taxi en movimiento"):
+                    st.session_state.taximetro.mover()
 
-    with col3:
-        if st.button("Taxi parado"):
-            st.session_state.taximetro.parar()
+            with col3:
+                if st.button("Taxi parado"):
+                    st.session_state.taximetro.parar()
 
-    with col4:
-        if st.button("Finalizar Carrera"):
-            st.session_state.taximetro.finalizar_carrera()
+            with col4:
+                if st.button("Finalizar Carrera"):
+                    st.session_state.taximetro.finalizar_carrera()
 
-    # Mostrar mensajes
-    st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
+            # Mostrar mensajes
+            st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
 
-    # Mostrar tarifa total dinámicamente
-    st.text(f"Tarifa Total: €{st.session_state.tarifa_final:.2f}")
+            # Mostrar tarifa total dinámicamente
+            st.text(f"Tarifa Total: €{st.session_state.tarifa_final:.2f}")
 
 if __name__ == "__main__":
     main()
