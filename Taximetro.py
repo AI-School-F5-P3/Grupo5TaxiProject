@@ -6,10 +6,13 @@ import streamlit as st
 class Taximetro:
     """Clase que simula el funcionamiento de un taxímetro."""
 
+    """#Al inicializar el objeto Taximetro, se obtienen las tarifas desde st.session_state si están disponibles. 
+        # Esto asegura que las tarifas actualizadas se mantengan durante la sesión."""
+    
     def __init__(self):
-        self.tarifa_por_minuto_movimiento = 3
-        self.tarifa_por_minuto_parado = 1.2
-        self.tarifa_base = 2.5
+        self.tarifa_por_minuto_movimiento = st.session_state.get('tarifa_movimiento', 3)
+        self.tarifa_por_minuto_parado = st.session_state.get('tarifa_parado', 1.2)
+        self.tarifa_base = st.session_state.get('tarifa_base', 2.5)
         self.reset()
 
     def reset(self):
@@ -65,6 +68,21 @@ class Taximetro:
                 self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_parado / 60)
             self.ultima_hora = hora_actual
 
+    def actualizar_precios(self, nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base):
+        self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
+        self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
+        self.tarifa_base = nueva_tarifa_base
+
+        #En el método actualizar_precios, se guardan las nuevas tarifas en st.session_state.
+        st.session_state['tarifa_movimiento'] = nueva_tarifa_por_minuto_movimiento
+        st.session_state['tarifa_parado'] = nueva_tarifa_por_minuto_parado
+        st.session_state['tarifa_base'] = nueva_tarifa_base
+
+
+
+        st.session_state.messages.append(f"{ahora()} - Tarifas actualizadas: Movimiento €{nueva_tarifa_por_minuto_movimiento}/min, Parado €{nueva_tarifa_por_minuto_parado}/min, Base €{nueva_tarifa_base}.")
+
+
 def ahora():
     ahora = datetime.now()
     hora_actual = ahora.strftime("%H:%M:%S")
@@ -90,6 +108,16 @@ def main():
         st.session_state.taximetro = Taximetro()
         st.session_state.messages = []
         st.session_state.tarifa_final = 0.0  # Inicializar la variable para la tarifa final
+    
+    #Opción del menú para actualizar los Precios
+    if menu_selection == "Cambiar Tarifas":
+        nueva_tarifa_por_minuto_movimiento = st.number_input("Nueva Tarifa por Minuto en Movimiento (€)", value=st.session_state.taximetro.tarifa_por_minuto_movimiento)
+        nueva_tarifa_por_minuto_parado = st.number_input("Nueva Tarifa por Minuto Parado (€)", value=st.session_state.taximetro.tarifa_por_minuto_parado)
+        nueva_tarifa_base = st.number_input("Nueva Tarifa Base (€)", value=st.session_state.taximetro.tarifa_base)
+
+        if st.button("Actualizar Tarifas"):
+            st.session_state.taximetro.actualizar_precios(nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base)
+
 
     col1, col2, col3, col4 = st.columns(4)
 
