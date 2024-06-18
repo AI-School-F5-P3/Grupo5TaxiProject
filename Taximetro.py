@@ -1,66 +1,119 @@
 import time
 
+from datetime import datetime
+import streamlit as st
+
 class Taximetro:
-  """Clase que simula el funcionamiento de un taxímetro."""
+    """Clase que simula el funcionamiento de un taxímetro."""
 
-  def __init__(self):
-    """Inicializa las variables de la clase."""
-    self.tiempo_parado = 0
-    self.tiempo_movimiento = 0
-    self.tarifa_parado = 0
-    self.tarifa_movimiento = 0
-    self.tarifa_total = 0
-    self.tarifa_base = 2.5
-  
-  def iniciar_carrera(self):
-    print ("Inicia la carrera del taxi.")
-    input("Presiona Enter para iniciar la carrera: ")
-    self.tiempo_inicio = time.time()
+    def __init__(self):
+        self.tarifa_por_minuto_movimiento = 3
+        self.tarifa_por_minuto_parado = 1.2
+        self.tarifa_base = 2.5
+        self.reset()
 
-  def actualizar_estado(self, estado_taxi):
-    """Actualiza el estado del taxi (en movimiento o parado)."""
-    estado_taxi = estado_taxi.lower()
-    if estado_taxi == "m":
-      self.actualizar_movimiento()
-    elif estado_taxi == "p":
-      self.actualizar_parado()
-    else:
-      print("Fin de la carrera.")
+    def reset(self):
+        self.en_marcha = False
+        self.en_movimiento = False
+        self.tarifa_total = self.tarifa_base
+        self.hora_inicio = None
+        self.ultima_hora = None
+        self.tiempo_movimiento = 0
+        self.tiempo_parado = 0
 
-  def actualizar_movimiento(self):
-    """Actualiza el tiempo y la tarifa en movimiento."""
-    tiempo_actual = time.time()
-    tiempo_transcurrido = tiempo_actual - self.tiempo_inicio
-    self.tiempo_movimiento += tiempo_transcurrido
-    self.tarifa_movimiento += tiempo_transcurrido * 0.05
-    self.tiempo_inicio = tiempo_actual
+    def iniciar(self):
+        # Comienza la carrera en estado parado, ya tarifica 
+        self.en_marcha = True
+        self.en_movimiento = False
+        self.hora_inicio = time.time()
+        self.ultima_hora = self.hora_inicio
+        st.session_state.messages.append(f"{ahora()} - Inicia la carrera del taxi.")
+        
+    def mover(self):
+        if self.en_marcha and not self.en_movimiento:
+            self.actualizar_tarifa()
+            self.en_movimiento = True
+            self.ultima_hora = time.time()
+            st.session_state.messages.append(f"{ahora()} - El taxi se ha puesto en marcha.")
 
-  def actualizar_parado(self):
-    """Actualiza el tiempo y la tarifa parado."""
-    tiempo_actual = time.time()
-    self.tiempo_transcurrido = tiempo_actual - self.tiempo_inicio
-    self.tiempo_parado += self.tiempo_transcurrido
-    self.tarifa_parado += self.tiempo_transcurrido * 0.02
-    self.tiempo_inicio = tiempo_actual
+    def parar(self):
+        if self.en_marcha and self.en_movimiento:
+            self.actualizar_tarifa()
+            self.en_movimiento = False
+            self.ultima_hora = time.time()
+            st.session_state.messages.append(f"{ahora()} - El taxi se ha parado.")
 
-  def finalizar_carrera(self):
-    """Calcula y muestra la tarifa total de la carrera."""
-    self.tarifa_total = self.tarifa_parado + self.tarifa_movimiento + self.tarifa_base
-    print(f"El tiempo transcurrido fue de: {round(self.tiempo_transcurrido,2)} y la tarifa total de la carrera es de: {self.tarifa_total:.2f} €")
+    def finalizar_carrera(self):
+        if self.en_marcha:
+            self.actualizar_tarifa()
+            st.session_state.tarifa_final = self.tarifa_total  # Guardar la tarifa final en session_state
+            st.session_state.messages.append(
+                f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {self.tarifa_total:.2f} €")
+            self.reset()
+        else:
+            st.session_state.messages.append(f"{ahora()} - No hay carrera en curso para finalizar.")
+
+    def actualizar_tarifa(self):
+        hora_actual = time.time()
+        if self.en_marcha:
+            tiempo_transcurrido = hora_actual - self.ultima_hora
+            if self.en_movimiento:
+                self.tiempo_movimiento += tiempo_transcurrido
+                self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_movimiento / 60)
+            else:
+                self.tiempo_parado += tiempo_transcurrido
+                self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_parado / 60)
+            self.ultima_hora = hora_actual
+
+def ahora():
+    ahora = datetime.now()
+    hora_actual = ahora.strftime("%H:%M:%S")
+    return hora_actual
+
+def limpiar_mensajes():
+    st.session_state.messages = []
 
 def main():
-  """Función principal que crea y utiliza la clase Taximetro."""
-  taximetro = Taximetro()
-  taximetro.iniciar_carrera()
+     
+    st.markdown(
+        """
+        <h1 style='text-align: center;'>Taxímetro - G5</h1>
+        """, 
+        unsafe_allow_html=True
+    )
+    
+    # Menú desplegable en la barra lateral
+    menu_options = [ "Seleccione Opción", "Cambiar Tarifas", "Ver Log", "Ayuda"]
+    menu_selection = st.sidebar.selectbox("Menú", menu_options)
 
-  while True:
-    estado_taxi = input("¿El taxi está en movimiento (m), parado (p) o finalizar (f)? ")
-    taximetro.actualizar_estado(estado_taxi)
+    if 'taximetro' not in st.session_state:
+        st.session_state.taximetro = Taximetro()
+        st.session_state.messages = []
+        st.session_state.tarifa_final = 0.0  # Inicializar la variable para la tarifa final
 
-    if estado_taxi not in ("m", "p"):
-      break
+    col1, col2, col3, col4 = st.columns(4)
 
-  taximetro.finalizar_carrera()
+    with col1:
+        if st.button("Iniciar Carrera"):
+            st.session_state.taximetro.iniciar()
+
+    with col2:
+        if st.button("Taxi en movimiento"):
+            st.session_state.taximetro.mover()
+
+    with col3:
+        if st.button("Taxi parado"):
+            st.session_state.taximetro.parar()
+
+    with col4:
+        if st.button("Finalizar Carrera"):
+            st.session_state.taximetro.finalizar_carrera()
+
+    # Mostrar mensajes
+    st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
+
+    # Mostrar tarifa total dinámicamente
+    st.text(f"Tarifa Total: €{st.session_state.tarifa_final:.2f}")
 
 if __name__ == "__main__":
-  main()
+    main()
