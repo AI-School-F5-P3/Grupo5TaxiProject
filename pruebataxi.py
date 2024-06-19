@@ -1,37 +1,45 @@
 import time
 from datetime import datetime
+import streamlit as st
 import logging
+import bcrypt
 
-def ahora():
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+# Diccionario de usuarios y contraseñas encriptadas
+usuarios = {
+    "user1": bcrypt.hashpw("password1".encode('utf-8'), bcrypt.gensalt()),
+    "user2": bcrypt.hashpw("password2".encode('utf-8'), bcrypt.gensalt()),
+    "user3": bcrypt.hashpw("password3".encode('utf-8'), bcrypt.gensalt()),
+    "user4": bcrypt.hashpw("password4".encode('utf-8'), bcrypt.gensalt()),
+    "user5": bcrypt.hashpw("password5".encode('utf-8'), bcrypt.gensalt()),
+}
 
 class Taximetro:
-    def __init__(self, test_mode=False):
-        self.test_mode = test_mode
+    """Clase que simula el funcionamiento de un taxímetro."""
+  
+    def __init__(self):
+        self.tarifa_por_minuto_movimiento = 3.0
+        self.tarifa_por_minuto_parado = 1.2
+        self.tarifa_base = 2.5
         self.reset()
+        logger.info("Taxímetro inicializando con tarifas base.")
 
     def reset(self):
-        self.tarifa_base = 1.5  # Tarifa base en euros
-        self.tarifa_por_km = 1.0  # Tarifa por kilómetro en euros
-        self.distancia_recorrida = 0.0
-        self.tiempo_viaje = 0.0
-        self.monto_total = 0.0
-        if not self.test_mode:
-            logging.info("Taxímetro restablecido.")
-        self.iniciar_tarifas_base()
-
-    def iniciar_tarifas_base(self):
-        if not self.test_mode:
-            logging.info("Taxímetro inicializando con tarifas base.")
-        self.tarifa_base = 1.5  # Tarifa base en euros
-        self.tarifa_por_km = 1.0  # Tarifa por kilómetro en euros
+        self.en_marcha = False
+        self.en_movimiento = False
+        self.tarifa_total = 0
+        self.hora_inicio = None
+        self.ultima_hora = None
+        self.tiempo_movimiento = 0
+        self.tiempo_parado = 0
+        logger.info("Taxímetro restablecido.")
 
     def iniciar(self):
-        if 'messages' not in st.session_state:
-            st.session_state['messages'] = []
+        self.en_marcha = True
+        self.en_movimiento = False
+        self.hora_inicio = time.time()
+        self.ultima_hora = self.hora_inicio
         st.session_state.messages.append(f"{ahora()} - Inicia la carrera del taxi.")
-        logger.info ("Carrera iniciada.")
-        logger.info ("Carrera iniciada.")
+        logger.info("Carrera iniciada.")
         
     def mover(self):
         if self.en_marcha and not self.en_movimiento:
@@ -39,8 +47,7 @@ class Taximetro:
             self.en_movimiento = True
             self.ultima_hora = time.time()
             st.session_state.messages.append(f"{ahora()} - El taxi se ha puesto en marcha.")
-            logger.info ("El taxi se ha puesto en marcha.")
-            logger.info ("El taxi se ha puesto en marcha.")
+            logger.info("El taxi se ha puesto en marcha.")
 
     def parar(self):
         if self.en_marcha and self.en_movimiento:
@@ -48,20 +55,18 @@ class Taximetro:
             self.en_movimiento = False
             self.ultima_hora = time.time()
             st.session_state.messages.append(f"{ahora()} - El taxi se ha parado.")
-            logger.info ("El taxi se ha parado.")
-           
+            logger.info("El taxi se ha parado.")
 
     def finalizar_carrera(self):
         if self.en_marcha:
             self.actualizar_tarifa()
-            st.session_state.tarifa_final = self.tarifa_total + self.tarifa_base # cambio al actualizar precios
-            st.session_state.messages.append(f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {st.session_state.tarifa_final:.2f} €")
-            logger.info(f"Carrera finalizada. Importe total:{self.tarifa_total:.2f} €") 
+            st.session_state.tarifa_final = self.tarifa_total + self.tarifa_base
+            st.session_state.messages.append(f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro: {self.tiempo_movimiento + self.tiempo_parado:.2f} segundos, Importe total: {st.session_state.tarifa_final:.2f} €")
+            logger.info(f"Carrera finalizada. Importe total: {self.tarifa_total:.2f} €") 
             self.reset()
         else:
             st.session_state.messages.append(f"{ahora()} - No hay carrera en curso para finalizar.")
             logger.warning("Intento de finalizar una carrera que no está en curso")
-
 
     def actualizar_tarifa(self):
         hora_actual = time.time()
@@ -74,18 +79,17 @@ class Taximetro:
                 self.tiempo_parado += tiempo_transcurrido
                 self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_parado / 60)
             self.ultima_hora = hora_actual
-            logger.info ("Tarifa actualizada.")
+            logger.info("Tarifa actualizada.")
 
     def cambiar_precios(self, nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base):
-            self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
-            self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
-            self.tarifa_base = nueva_tarifa_base
-            logger.info ("Actualización de tarifas realizada.")
-            self.reset()  # Llamar a reset después de cambiar las tarifas
-            st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
-            
+        self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
+        self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
+        self.tarifa_base = nueva_tarifa_base
+        logger.info("Actualización de tarifas realizada.")
+        self.reset()  # Llamar a reset después de cambiar las tarifas
+        st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
 
-# Funcion para el log.
+# Función para el log.
 def get_logger():
     # Crear un logger
     logger = logging.getLogger()
@@ -113,15 +117,12 @@ def get_logger():
 
 logger = get_logger()
 
-
-
 def leer_log():
     try:
         with open('taximetro.log', 'r') as file:
             return file.read()
     except FileNotFoundError:
         return "No se encontró el archivo de log."
-
 
 def ahora():
     ahora = datetime.now()
@@ -138,12 +139,11 @@ def main():
         """, 
         unsafe_allow_html=True
     )
-
      
     # Menú desplegable en la barra lateral
     menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
     menu_selection = st.sidebar.selectbox("Menú", menu_options)
-    logger.info(f"Menu seleccionado: {menu_selection}")
+    logger.info(f"Menú seleccionado: {menu_selection}")
 
     if 'taximetro' not in st.session_state:
         st.session_state.taximetro = Taximetro()
@@ -158,7 +158,7 @@ def main():
                 password = st.text_input("Password", type="password")
                 submit_button = st.form_submit_button(label="Login")
                 if submit_button:
-                    if usuario == "user" and password == "password":
+                    if usuario in usuarios and bcrypt.checkpw(password.encode('utf-8'), usuarios[usuario]):
                         st.session_state.logged_in = True
                         st.success("Login realizado con éxito")
                     else:
@@ -167,7 +167,7 @@ def main():
         else:
             html_warning = """
             <div style='display: flex; justify-content: center; align-items: center; height: 50vh;'>
-                <div style='font-size:  xx-large; color: black; text-align: center;'>
+                <div style='font-size: xx-large; color: black; text-align: center;'>
                     <p>Bienvenido al Taxímetro de Precisión.</p>
                     <p>Debe realizar login para utilizar el Taxímetro.</p>
                     <p>Para detalles del funcionamiento elija la opción Ayuda.</p>
@@ -175,8 +175,6 @@ def main():
             </div>
             """
             st.markdown(html_warning, unsafe_allow_html=True)
-
-
     else:
         if menu_selection == "Cambiar Precios":
             with st.form("form_cambiar_precios"):
@@ -188,7 +186,6 @@ def main():
                     st.session_state.taximetro.cambiar_precios(nueva_tarifa_movimiento, nueva_tarifa_parado, nueva_tarifa_base)
                     st.success("Tarifas actualizadas correctamente.")
         
-
         elif menu_selection == "Ayuda":
             html_ayuda = """
                 <div style='font-size:xx-large; color:black;'>
@@ -216,22 +213,22 @@ def main():
             with col1:
                 if st.button("Iniciar Carrera"):
                     st.session_state.taximetro.iniciar()
-                    logger.info ("Botón 'Iniciar Carrera' presionado.")
+                    logger.info("Botón 'Iniciar Carrera' presionado.")
 
             with col2:
                 if st.button("Taxi en movimiento"):
                     st.session_state.taximetro.mover()
-                    logger.info ("Botón 'Taxi en movimiento' presionado.")
+                    logger.info("Botón 'Taxi en movimiento' presionado.")
 
             with col3:
                 if st.button("Taxi parado"):
                     st.session_state.taximetro.parar()
-                    logger.info ("Botón 'Taxi parado' presionado.")
+                    logger.info("Botón 'Taxi parado' presionado.")
 
             with col4:
                 if st.button("Finalizar Carrera"):
                     st.session_state.taximetro.finalizar_carrera()
-                    logger.info ("Botón 'Finalizar carrera' presionado.")
+                    logger.info("Botón 'Finalizar carrera' presionado.")
 
             # Mostrar mensajes
             st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
@@ -241,3 +238,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
