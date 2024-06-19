@@ -1,3 +1,4 @@
+
 import time
 from datetime import datetime
 import streamlit as st
@@ -6,16 +7,19 @@ import logging
 class Taximetro:
     """Clase que simula el funcionamiento de un taxímetro."""
 
+  
     def __init__(self):
         self.tarifa_por_minuto_movimiento = 3.0
         self.tarifa_por_minuto_parado = 1.2
         self.tarifa_base = 2.5
         self.reset()
         logger.info ("Taxímetro inicializando con tarifas base.")
+        logger.info ("Taxímetro inicializando con tarifas base.")
 
     def reset(self):
         self.en_marcha = False
         self.en_movimiento = False
+        self.tarifa_total = 0
         self.tarifa_total = 0
         self.hora_inicio = None
         self.ultima_hora = None
@@ -32,6 +36,7 @@ class Taximetro:
         self.ultima_hora = self.hora_inicio
         st.session_state.messages.append(f"{ahora()} - Inicia la carrera del taxi.")
         logger.info ("Carrera iniciada.")
+        logger.info ("Carrera iniciada.")
         
     def mover(self):
         if self.en_marcha and not self.en_movimiento:
@@ -39,6 +44,7 @@ class Taximetro:
             self.en_movimiento = True
             self.ultima_hora = time.time()
             st.session_state.messages.append(f"{ahora()} - El taxi se ha puesto en marcha.")
+            logger.info ("El taxi se ha puesto en marcha.")
             logger.info ("El taxi se ha puesto en marcha.")
 
     def parar(self):
@@ -137,10 +143,12 @@ def main():
         """, 
         unsafe_allow_html=True
     )
-    
+
+     
     # Menú desplegable en la barra lateral
     menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
     menu_selection = st.sidebar.selectbox("Menú", menu_options)
+    logger.info(f"Menu seleccionado: {menu_selection}")
 
     if 'taximetro' not in st.session_state:
         st.session_state.taximetro = Taximetro()
