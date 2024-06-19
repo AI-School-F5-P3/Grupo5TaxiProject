@@ -1,0 +1,36 @@
+2024-06-19 10:35:54,999 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:35:54,999 - root - INFO - Taxímetro restablecido.
+2024-06-19 10:35:55,012 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-19 10:35:55,013 - root - INFO - Sesión inicializada.
+2024-06-19 10:35:55,274 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:35:55,274 - root - INFO - Taxímetro restablecido.
+2024-06-19 10:35:55,274 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-19 10:35:55,274 - root - INFO - Sesión inicializada.
+2024-06-19 10:36:06,619 - root - INFO - Menu seleccionado: Ver Log
+2024-06-19 10:40:24,829 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-19 10:40:27,910 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-19 10:40:28,001 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-19 10:40:28,005 - root - INFO - Taxímetro restablecido.
+2024-06-19 10:40:31,886 - root - INFO - Menu seleccionado: Ver Log
+2024-06-19 10:40:44,256 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:40:46,061 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:40:46,062 - root - INFO - Carrera iniciada.
+2024-06-19 10:40:46,062 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-19 10:40:46,607 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:40:46,609 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
+2024-06-19 10:40:46,610 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-19 10:40:46,610 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-19 10:40:47,106 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:40:47,110 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
+2024-06-19 10:40:47,110 - root - INFO - El taxi se ha parado.
+2024-06-19 10:40:47,110 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-19 10:40:47,513 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:40:47,515 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
+2024-06-19 10:40:47,515 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-19 10:40:47,516 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-19 10:40:48,457 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-19 10:40:48,462 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
+2024-06-19 10:40:48,462 - root - INFO - Carrera finalizada. Importe total:0.09 €
+2024-06-19 10:40:48,464 - root - INFO - Taxímetro restablecido.
+2024-06-19 10:40:48,465 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-19 10:40:50,426 - root - INFO - Menu seleccionado: Ver Log
