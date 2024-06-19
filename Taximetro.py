@@ -101,17 +101,15 @@ class Taximetro:
                 self.tiempo_parado += tiempo_transcurrido
                 self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_parado / 60)
             self.ultima_hora = hora_actual
-            logger.info ("Tarifa actualizada.")
+            logger.info (f"Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
 
     def actualizar_precios(self, nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base):
         self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
         self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
         self.tarifa_base = nueva_tarifa_base
         self.reset()
-       
         st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
-
-
+        
 
 def ahora():
     ahora = datetime.now()
@@ -148,6 +146,7 @@ def main():
         st.session_state.messages = []
         st.session_state.tarifa_final = 0.0  # Inicializar la variable para la tarifa final
         logger.info ("Sesión inicializada.")
+
     #Opción del menú para actualizar los Precios
     if menu_selection == "Cambiar Precios":
         nueva_tarifa_por_minuto_movimiento = st.number_input("Nueva Tarifa por Minuto en Movimiento (€)", value=st.session_state.taximetro.tarifa_por_minuto_movimiento)
@@ -156,9 +155,6 @@ def main():
 
         if st.button("Actualizar Precios"):
             st.session_state.taximetro.actualizar_precios(nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base)
-    
-    elif menu_selection == "Ver Log":
-        st.text_area("Log de Actividades", value="\n".join(st.session_state.messages), height=200)
 
     elif menu_selection == "Ayuda":
         st.write("""
@@ -171,7 +167,7 @@ def main():
         - **Cambiar Precios**: Permite actualizar las tarifas base, por minuto en movimiento y por minuto parado.
         - **Ver Log**: Muestra el registro de todas las actividades realizadas.
         """)
-        logger.info ("Sesión inicializada.")
+        logger.info ("Botón 'Ayuda' presionado.")
 
     if menu_selection == "Ver Log":
         # Mostrar el contenido del log en una sección separada
