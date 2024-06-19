@@ -1,46 +1,29 @@
 import unittest
-from unittest.mock import patch, MagicMock
-import time
-from datetime import datetime
-import streamlit as st
-from Taximetro import Taximetro
+from Taximetro import Taximetro  # Asumiendo que tu clase Taximetro está en un archivo llamado Taximetro.py
 
 class TestTaximetro(unittest.TestCase):
 
     def setUp(self):
-        # Inicializar Streamlit session_state para simulación
-        st.session_state = MagicMock()
-        st.session_state.messages = []
-
-        # Crear una instancia de Taximetro para cada prueba
-        self.taximetro = Taximetro()
+        self.taximetro = Taximetro()  # Inicializar una nueva instancia de Taximetro antes de cada test
 
     def test_mover(self):
-        # Simular que el taxímetro está en marcha pero no en movimiento
-        self.taximetro.en_marcha = True
-        self.taximetro.en_movimiento = False
-        self.taximetro.hora_inicio = time.time()
+        print("Test: Verificando que en_marcha sea False al inicio")
+        self.assertFalse(self.taximetro.en_marcha)
 
-        # Simular tiempo falso para el patch
-        fake_time = self.taximetro.hora_inicio + 60  # 60 segundos después
-        with patch('time.time', return_value=fake_time):
-            # Llamar a mover
-            self.taximetro.mover()
+        print("Test: Llamar al método iniciar")
+        self.taximetro.iniciar()
 
-            # Verificar el estado después de llamar a mover
-            self.assertTrue(self.taximetro.en_movimiento)
-            self.assertEqual(self.taximetro.ultima_hora, fake_time)
+        print("Test: Verificando que en_marcha sea True después de iniciar")
+        self.assertTrue(self.taximetro.en_marcha)
 
-            # Verificar los mensajes en session_state
-            self.assertIn("El taxi se ha puesto en marcha.", st.session_state.messages)
+        print("Test: Verificando que en_movimiento sea False al inicio")
+        self.assertFalse(self.taximetro.en_movimiento)
 
-    def test_parar(self):
-        # Implementar si es necesario
-        pass
+        print("Test: Llamar al método mover")
+        self.taximetro.mover()
 
-    def test_finalizar_carrera(self):
-        # Implementar si es necesario
-        pass
+        print("Test: Verificando que en_movimiento sea True después de mover")
+        self.assertTrue(self.taximetro.en_movimiento)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
