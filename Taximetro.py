@@ -81,12 +81,13 @@ class Taximetro:
             logger.info ("Tarifa actualizada.")
 
     def cambiar_precios(self, nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base):
-        self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
-        self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
-        self.tarifa_base = nueva_tarifa_base
-        self.reset()  # Llamar a reset después de cambiar las tarifas
-        st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
-        logger.info ("Actualización de tarifas realizada.")
+            self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
+            self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
+            self.tarifa_base = nueva_tarifa_base
+            logger.info ("Actualización de tarifas realizada.")
+            self.reset()  # Llamar a reset después de cambiar las tarifas
+            st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
+            
 
 # Funcion para el log.
 def get_logger():
@@ -195,8 +196,16 @@ def main():
 
         elif menu_selection == "Ayuda":
             html_ayuda = """
-                <div style='font-size:xx-large; color:red;'>
-                    <p>Te ayudo un poquito</p>
+                <div style='font-size:xx-large; color:black;'>
+                    <h2>Ayuda</h2>
+                    <ul>
+                    <li><b>Iniciar Carrera:</b> Comienza la carrera en estado parado.</li>
+                    <li><b>Taxi en Movimiento:</b> Indica que el taxi se ha puesto en marcha.</li>
+                    <li><b>Taxi Parado:</b> Indica que el taxi se ha detenido.</li>
+                    <li><b>Finalizar Carrera:</b> Finaliza la carrera y calcula el total.</li>
+                    <li><b>Cambiar Precios:</b> Permite actualizar las tarifas base, por minuto en movimiento y por minuto parado.</li>
+                    <li><b>Ver Log:</b> Muestra el registro de todas las actividades realizadas</li>
+                    </ul>             
                 </div>
             """
             st.markdown(html_ayuda, unsafe_allow_html=True)
