@@ -92,7 +92,8 @@ def main():
         """, 
         unsafe_allow_html=True
     )
-    
+
+     
     # Menú desplegable en la barra lateral
     menu_options = [ "Seleccione Opción", "Cambiar Precios", "Ver Log", "Ayuda"]
     menu_selection = st.sidebar.selectbox("Menú", menu_options)
@@ -110,7 +111,21 @@ def main():
 
         if st.button("Actualizar Precios"):
             st.session_state.taximetro.actualizar_precios(nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base)
+    
+    elif menu_selection == "Ver Log":
+        st.text_area("Log de Actividades", value="\n".join(st.session_state.messages), height=200)
 
+    elif menu_selection == "Ayuda":
+        st.write("""
+        ### Ayuda
+        
+        - **Iniciar Carrera**: Comienza la carrera en estado parado.
+        - **Taxi en Movimiento**: Indica que el taxi se ha puesto en marcha.
+        - **Taxi Parado**: Indica que el taxi se ha detenido.
+        - **Finalizar Carrera**: Finaliza la carrera y calcula el total.
+        - **Cambiar Precios**: Permite actualizar las tarifas base, por minuto en movimiento y por minuto parado.
+        - **Ver Log**: Muestra el registro de todas las actividades realizadas.
+        """)
 
     col1, col2, col3, col4 = st.columns(4)
 
