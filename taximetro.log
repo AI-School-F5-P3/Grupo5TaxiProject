@@ -131,3 +131,168 @@
 2024-06-20 08:46:30,181 - root - INFO - Taxímetro inicializando con tarifas base.
 2024-06-20 08:46:30,183 - root - INFO - Taxímetro restablecido.
 2024-06-20 08:46:30,183 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:09:15,262 - root - INFO - Actualización de tarifas realizada.
+2024-06-20 12:09:18,677 - root - INFO - Actualización de tarifas realizada.
+2024-06-20 12:10:53,421 - root - INFO - Actualización de tarifas realizada.
+2024-06-20 12:42:05,254 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:05,254 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:05,254 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:05,255 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:05,255 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:05,256 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:05,256 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:05,257 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:06,258 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:06,259 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:06,259 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:06,260 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:06,260 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:06,261 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:07,262 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:07,263 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:07,265 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:07,266 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:07,267 - root - INFO - Actualización de tarifas realizada.
+2024-06-20 12:42:07,268 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:07,291 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:07,292 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:07,292 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:07,293 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:07,294 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:07,294 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:07,294 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:07,295 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:08,297 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:08,297 - root - INFO - El taxi se ha parado.
+2024-06-20 12:42:08,297 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:08,298 - root - INFO - Carrera finalizada. Importe total:0.05 €
+2024-06-20 12:42:08,298 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:08,301 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:08,302 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:08,302 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:08,303 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:08,303 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:08,305 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:08,305 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:08,305 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:08,306 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:08,306 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:08,307 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:08,307 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:08,307 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:08,309 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:42:08,310 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:08,310 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:42:08,311 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:08,311 - root - INFO - Carrera iniciada.
+2024-06-20 12:42:08,311 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:08,312 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:08,312 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 12:42:08,312 - root - INFO - Tarifa actualizada.
+2024-06-20 12:42:08,313 - root - INFO - El taxi se ha parado.
+2024-06-20 12:59:14,112 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:59:14,112 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:59:14,113 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:59:14,113 - root - INFO - Carrera iniciada.
+2024-06-20 12:59:14,113 - root - INFO - Carrera iniciada.
+2024-06-20 12:59:14,117 - root - INFO - Taxímetro restablecido.
+2024-06-20 12:59:14,117 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 12:59:14,117 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 13:16:27,688 - root - INFO - Taxímetro restablecido.
+2024-06-20 13:16:27,688 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 13:16:27,689 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 13:16:27,689 - root - INFO - Carrera iniciada.
+2024-06-20 13:16:27,689 - root - INFO - Carrera iniciada.
+2024-06-20 13:16:27,689 - root - INFO - Taxímetro restablecido.
+2024-06-20 13:16:27,689 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 13:16:27,690 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 13:16:27,690 - root - INFO - Carrera iniciada.
+2024-06-20 13:16:27,690 - root - INFO - Carrera iniciada.
+2024-06-20 13:16:27,691 - root - INFO - Tarifa actualizada.
+2024-06-20 13:16:27,691 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 13:16:27,691 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:35:22,375 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:35:22,376 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:35:22,376 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:35:22,377 - root - INFO - Carrera iniciada.
+2024-06-20 14:35:22,377 - root - INFO - Carrera iniciada.
+2024-06-20 14:35:22,379 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:35:22,379 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:35:22,379 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:35:22,380 - root - INFO - Carrera iniciada.
+2024-06-20 14:35:22,380 - root - INFO - Carrera iniciada.
+2024-06-20 14:35:22,381 - root - INFO - Tarifa actualizada.
+2024-06-20 14:35:22,381 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:35:22,382 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:41:31,739 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:41:31,739 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:41:31,740 - root - INFO - Carrera iniciada.
+2024-06-20 14:41:31,742 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:41:31,742 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:41:31,743 - root - INFO - Carrera iniciada.
+2024-06-20 14:41:31,743 - root - INFO - Tarifa actualizada.
+2024-06-20 14:41:31,743 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:45:15,592 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:45:15,592 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:45:15,593 - root - INFO - Carrera iniciada.
+2024-06-20 14:45:15,595 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:45:15,595 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:45:15,596 - root - INFO - Carrera iniciada.
+2024-06-20 14:45:15,596 - root - INFO - Tarifa actualizada.
+2024-06-20 14:45:15,596 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:50:29,442 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:50:29,443 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:50:29,444 - root - INFO - Carrera iniciada.
+2024-06-20 14:50:29,446 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:50:29,446 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:50:29,447 - root - INFO - Carrera iniciada.
+2024-06-20 14:50:29,447 - root - INFO - Tarifa actualizada.
+2024-06-20 14:50:29,447 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:52:30,125 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:52:30,125 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:52:30,126 - root - INFO - Carrera iniciada.
+2024-06-20 14:52:30,128 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:52:30,128 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:52:30,129 - root - INFO - Carrera iniciada.
+2024-06-20 14:52:30,129 - root - INFO - Tarifa actualizada.
+2024-06-20 14:52:30,129 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:54:55,991 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:54:55,991 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:54:55,992 - root - INFO - Carrera iniciada.
+2024-06-20 14:54:55,994 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:54:55,994 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:54:55,995 - root - INFO - Carrera iniciada.
+2024-06-20 14:54:55,995 - root - INFO - Tarifa actualizada.
+2024-06-20 14:54:55,995 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 14:58:59,819 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:58:59,819 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:58:59,820 - root - INFO - Carrera iniciada.
+2024-06-20 14:58:59,820 - root - INFO - Taxímetro restablecido.
+2024-06-20 14:58:59,821 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 14:58:59,821 - root - INFO - Carrera iniciada.
+2024-06-20 14:58:59,822 - root - INFO - Tarifa actualizada.
+2024-06-20 14:58:59,822 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:10:05,330 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:10:05,330 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:10:05,331 - root - INFO - Carrera iniciada.
+2024-06-20 15:10:05,332 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:10:05,332 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:10:05,333 - root - INFO - Carrera iniciada.
+2024-06-20 15:10:05,333 - root - INFO - Tarifa actualizada.
+2024-06-20 15:10:05,333 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:11:33,512 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:11:33,512 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:11:33,516 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:11:33,516 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:16:18,585 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:16:18,585 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:16:18,587 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:16:18,587 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:18:38,541 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:18:38,542 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:18:38,542 - root - INFO - Carrera iniciada.
+2024-06-20 15:18:38,543 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:18:38,543 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:18:38,544 - root - INFO - Carrera iniciada.
+2024-06-20 15:18:38,544 - root - INFO - Tarifa actualizada.
+2024-06-20 15:18:38,544 - root - INFO - El taxi se ha puesto en marcha.
