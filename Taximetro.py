@@ -2,17 +2,9 @@ import time
 from datetime import datetime
 import streamlit as st
 import logging
-import mysql.connector
 
 
-# Configuración de la conexión a la base de datos
-def conectar_bd():
-    return mysql.connector.connect(
-        host="3306",
-        user="root",
-        password="root",
-        database="taximetrodb"
-    )
+
 
 class Taximetro:
     """Clase que simula el funcionamiento de un taxímetro."""
@@ -55,7 +47,6 @@ class Taximetro:
             st.session_state.messages.append(f"{ahora()} - El taxi se ha puesto en marcha.")
             logger.info ("El taxi se ha puesto en marcha.")
             
-
     def parar(self):
         if self.en_marcha and self.en_movimiento:
             self.actualizar_tarifa()
@@ -71,7 +62,6 @@ class Taximetro:
             st.session_state.tarifa_final = self.tarifa_total + self.tarifa_base # cambio al actualizar precios
             st.session_state.messages.append(f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {st.session_state.tarifa_final:.2f} €")
             logger.info(f"Carrera finalizada. Importe total:{self.tarifa_total:.2f} €") 
-            self.guardar_carrera()
             self.reset()
         else:
             st.session_state.messages.append(f"{ahora()} - No hay carrera en curso para finalizar.")
@@ -98,37 +88,7 @@ class Taximetro:
             logger.info ("Actualización de tarifas realizada.")
             self.reset()  # Llamar a reset después de cambiar las tarifas
             st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
-            self.guardar_tarifas()
-
-    def guardar_carrera(self):
-        conn = conectar_bd()
-        cursor = conn.cursor()
-        query = "INSERT INTO carreras (tarifa_total, tiempo_movimiento, tiempo_parado, hora_inicio, hora_fin) VALUES (%s, %s, %s, %s, %s)"
-        cursor.execute(query, (
-            self.tarifa_total,
-            self.tiempo_movimiento,
-            self.tiempo_parado,
-            datetime.fromtimestamp(self.hora_inicio),
-            datetime.fromtimestamp(time.time())
-        ))
-        conn.commit()
-        cursor.close()
-        conn.close()
-        logger.info("Carrera guardada en la base de datos.")
-
-    def guardar_tarifas(self):
-        conn = conectar_bd()
-        cursor = conn.cursor()
-        query = "INSERT INTO tarifas (tarifa_movimiento, tarifa_parado, tarifa_base) VALUES (%s, %s, %s)"
-        cursor.execute(query, (
-            self.tarifa_por_minuto_movimiento,
-            self.tarifa_por_minuto_parado,
-            self.tarifa_base
-        ))
-        conn.commit()
-        cursor.close()
-        conn.close()
-        logger.info("Tarifas guardadas en la base de datos.")         
+            
 
 # Funcion para el log.
 def get_logger():
@@ -173,116 +133,152 @@ def ahora():
     hora_actual = ahora.strftime("%H:%M:%S")
     return hora_actual
 
-def limpiar_mensajes():
-    st.session_state.messages = []
+
+usuarios = {
+    "user1": "password1",
+    "user2": "password2",
+    "user3": "password3",
+    "user4": "password4",
+    "user5": "password5",
+}
+
 
 def main():
+    # Estilos personalizados con CSS
+
     st.markdown(
         """
-        <h1 style='text-align: center;'>Taxímetro - G5</h1>
+        <style>
+            .stApp {
+                background-color: #FEE338;  /* Fondo amarillo mate */ 
+            }
+            .css-1d391kg {  /* Sidebar */
+                 background-color: #FEE338;  /* Fondo amarillo mate */
+            }
+            .stTextInput, .stButton, .stNumberInput {
+                margin-bottom: 10px;  /* Espacio entre los elementos del formulario */
+            }
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        """
+        <h1 style='text-align: center;'>Taxi Driver</h1>
         """, 
         unsafe_allow_html=True
     )
 
-     
-    # Menú desplegable en la barra lateral
-    menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
-    menu_selection = st.sidebar.selectbox("Menú", menu_options)
-    logger.info(f"Menu seleccionado: {menu_selection}")
+  
 
-    if 'taximetro' not in st.session_state:
-        st.session_state.taximetro = Taximetro()
-        st.session_state.messages = []
-        st.session_state.tarifa_final = 0.0  # Inicializar la variable para la tarifa final
-        st.session_state.logged_in = False  # Estado de login
+    try:
+        menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
+        menu_selection = st.sidebar.selectbox("Menú", menu_options)
+        logger.info(f"Menu seleccionado: {menu_selection}")
 
-    if not st.session_state.logged_in:
-        if menu_selection == "Login":
-            with st.form("form_login"):
-                usuario = st.text_input("Usuario")
-                password = st.text_input("Password", type="password")
-                submit_button = st.form_submit_button(label="Login")
-                if submit_button:
-                    if usuario == "user" and password == "password":
-                        st.session_state.logged_in = True
-                        st.success("Login realizado con éxito")
-                    else:
-                        st.session_state.logged_in = False
-                        st.error("Usuario o password incorrectos")
+        if 'taximetro' not in st.session_state:
+            st.session_state.taximetro = Taximetro()
+            st.session_state.messages = []
+            st.session_state.tarifa_final = 0.0
+            st.session_state.logged_in = False
+
+        if not st.session_state.logged_in:
+            if menu_selection == "Login":
+                with st.form("form_login"):
+                    usuario = st.text_input("Usuario")
+                    password = st.text_input("Password", type="password")
+                    submit_button = st.form_submit_button(label="Login")
+                    if submit_button:
+                        if usuario in usuarios and usuarios[usuario] == password:
+                       
+                            st.session_state.logged_in = True
+                            st.success("Login realizado con éxito")
+                        else:
+                            st.session_state.logged_in = False
+                            st.error("Usuario o password incorrectos")
+            else:
+                html_warning = """
+                <div style='display: flex; justify-content: center; align-items: center; height: 50vh;'>
+                    <div style='font-size:  xx-large; color: black; text-align: center;'>
+                        <p>Bienvenido al Taxímetro de Precisión.</p>
+                        <p>Debe realizar Login para utilizar el Taxímetro.</p>
+                        <p>Para detalles del funcionamiento elija la opción Ayuda.</p>
+                    </div>
+                </div>
+                """
+                st.markdown(html_warning, unsafe_allow_html=True)
+
         else:
-            html_warning = """
-            <div style='display: flex; justify-content: center; align-items: center; height: 50vh;'>
-                <div style='font-size:  xx-large; color: black; text-align: center;'>
-                    <p>Bienvenido al Taxímetro de Precisión.</p>
-                    <p>Debe realizar login para utilizar el Taxímetro.</p>
-                    <p>Para detalles del funcionamiento elija la opción Ayuda.</p>
-                </div>
-            </div>
-            """
-            st.markdown(html_warning, unsafe_allow_html=True)
-
-
-    else:
-        if menu_selection == "Cambiar Precios":
-            with st.form("form_cambiar_precios"):
-                nueva_tarifa_movimiento = st.number_input("Nueva Tarifa por Minuto en Movimiento (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_por_minuto_movimiento))
-                nueva_tarifa_parado = st.number_input("Nueva Tarifa por Minuto Parado (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_por_minuto_parado))
-                nueva_tarifa_base = st.number_input("Nueva Tarifa Base (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_base))
-                submit_button = st.form_submit_button(label="Actualizar Tarifas")
-                if submit_button:
-                    st.session_state.taximetro.cambiar_precios(nueva_tarifa_movimiento, nueva_tarifa_parado, nueva_tarifa_base)
-                    st.success("Tarifas actualizadas correctamente.")
-        
-
-        elif menu_selection == "Ayuda":
-            html_ayuda = """
-                <div style='font-size:xx-large; color:black;'>
-                    <h2>Ayuda</h2>
-                    <ul>
-                    <li><b>Iniciar Carrera:</b> Comienza la carrera en estado parado.</li>
-                    <li><b>Taxi en Movimiento:</b> Indica que el taxi se ha puesto en marcha.</li>
-                    <li><b>Taxi Parado:</b> Indica que el taxi se ha detenido.</li>
-                    <li><b>Finalizar Carrera:</b> Finaliza la carrera y calcula el total.</li>
-                    <li><b>Cambiar Precios:</b> Permite actualizar las tarifas base, por minuto en movimiento y por minuto parado.</li>
-                    <li><b>Ver Log:</b> Muestra el registro de todas las actividades realizadas</li>
-                    </ul>             
-                </div>
-            """
-            st.markdown(html_ayuda, unsafe_allow_html=True)
+            if menu_selection == "Cambiar Precios":
+                with st.form("form_cambiar_precios"):
+                    nueva_tarifa_movimiento = st.number_input("Nueva Tarifa por Minuto en Movimiento (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_por_minuto_movimiento))
+                    nueva_tarifa_parado = st.number_input("Nueva Tarifa por Minuto Parado (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_por_minuto_parado))
+                    nueva_tarifa_base = st.number_input("Nueva Tarifa Base (€)", min_value=0.0, value=float(st.session_state.taximetro.tarifa_base))
+                    submit_button = st.form_submit_button(label="Actualizar Tarifas")
+                    if submit_button:
+                        st.session_state.taximetro.cambiar_precios(nueva_tarifa_movimiento, nueva_tarifa_parado, nueva_tarifa_base)
+                        st.success("Tarifas actualizadas correctamente.")
             
-        elif menu_selection == "Ver Log":
-            # Mostrar el contenido del log en una sección separada
-            st.markdown("### Log del Sistema")
-            st.text_area("Log del sistema", value=leer_log(), height=200)
+            elif menu_selection == "Ayuda":
+                html_ayuda = """
+                    <div style='font-size:xx-large; color:black;'>
+                        <h2>Ayuda</h2>
+                        <ul>
+                        <li>Esta aplicación calcula el coste total de una carrera, con un precio distinto si el taxi se mueve o está parado</li>
+                        <li>Tarifas iniciales: 3€/min en marcha, 1.2 €/min parado y 2.5€ por bajada de bandera (tarifa base)</li>
+                        <li>La simulación se realiza mediante los botones situados en la parte superior de la pantalla Taxímetro</li>
+                        <li><b>Iniciar Carrera:</b> Comienza la carrera en estado parado.</li>
+                        <li><b>Taxi en Movimiento:</b> Indica que el taxi se ha puesto en marcha.</li>
+                        <li><b>Taxi Parado:</b> Indica que el taxi se ha detenido.</li>
+                        <li><b>Finalizar Carrera:</b> Finaliza la carrera y calcula el total.</li>
+                        <li><b>Cambiar Precios:</b> Permite actualizar las tarifas base, por minuto en movimiento y por minuto parado.</li>
+                        <li><b>Ver Log:</b> Muestra el registro de todas las actividades realizadas</li>
+                        </ul>             
+                    </div>
+                """
+                st.markdown(html_ayuda, unsafe_allow_html=True)
+                
+            elif menu_selection == "Ver Log":
+                st.markdown("### Visualización del Log")
+                st.text_area("", value=leer_log(), height=200)
 
-        else:
-            col1, col2, col3, col4 = st.columns(4)
+            else:
+                col1, col2, col3, col4 = st.columns(4)
 
-            with col1:
-                if st.button("Iniciar Carrera"):
-                    st.session_state.taximetro.iniciar()
-                    logger.info ("Botón 'Iniciar Carrera' presionado.")
+                with col1:
+                    if st.button("Iniciar Carrera"):
+                        st.session_state.taximetro.iniciar()
+                        st.session_state.tarifa_final = 0.0  # Reset tarifa total
+                        logger.info("Botón 'Iniciar Carrera' presionado.")
 
-            with col2:
-                if st.button("Taxi en movimiento"):
-                    st.session_state.taximetro.mover()
-                    logger.info ("Botón 'Taxi en movimiento' presionado.")
+                with col2:
+                    if st.button("Taxi en movimiento"):
+                        st.session_state.taximetro.mover()
+                        logger.info("Botón 'Taxi en movimiento' presionado.")
 
-            with col3:
-                if st.button("Taxi parado"):
-                    st.session_state.taximetro.parar()
-                    logger.info ("Botón 'Taxi parado' presionado.")
+                with col3:
+                    if st.button("Taxi parado"):
+                        st.session_state.taximetro.parar()
+                        logger.info("Botón 'Taxi parado' presionado.")
 
-            with col4:
-                if st.button("Finalizar Carrera"):
-                    st.session_state.taximetro.finalizar_carrera()
-                    logger.info ("Botón 'Finalizar carrera' presionado.")
+                with col4:
+                    if st.button("Finalizar Carrera"):
+                        st.session_state.taximetro.finalizar_carrera()
+                        logger.info("Botón 'Finalizar carrera' presionado.")
 
-            # Mostrar mensajes
-            st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
+                st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
+                #st.text(f"Tarifa Total: €{st.session_state.tarifa_final:.2f}")
+                st.markdown(f"**Tarifa Total: €{st.session_state.tarifa_final:.2f}**")
 
-            # Mostrar tarifa total dinámicamente
-            st.text(f"Tarifa Total: €{st.session_state.tarifa_final:.2f}")
+    except ValueError as ve:
+        st.error(f"Error de valor: {ve}")
+        logger.error(f"Error de valor: {ve}")
+    except TypeError as te:
+        st.error(f"Error de tipo: {te}")
+        logger.error(f"Error de tipo: {te}")
+    except Exception as e:
+        st.error(f"Se ha producido un error inesperado: {e}")
+        logger.error(f"Error inesperado: {e}")
 
 if __name__ == "__main__":
     main()
