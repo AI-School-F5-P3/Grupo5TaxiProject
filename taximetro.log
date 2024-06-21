@@ -34,3 +34,26 @@
 2024-06-21 10:15:32,829 - root - INFO - Menu seleccionado: Ver Log
 2024-06-21 10:16:40,432 - root - INFO - Menu seleccionado: Taxímetro
 2024-06-21 10:16:40,432 - root - ERROR - Error inesperado: 'Taximetro' object has no attribute 'logger'
+2024-06-21 10:29:00,853 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:29:00,854 - root - INFO - Taxímetro restablecido.
+2024-06-21 10:29:00,855 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-21 10:29:05,620 - root - INFO - Menu seleccionado: Login
+2024-06-21 10:29:13,543 - root - INFO - Menu seleccionado: Login
+2024-06-21 10:29:18,184 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:29:19,194 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:29:19,195 - root - INFO - Carrera iniciada.
+2024-06-21 10:29:19,196 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-21 10:29:19,894 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:29:19,895 - root - INFO - Tarifa actualizada.
+2024-06-21 10:29:19,896 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-21 10:29:19,896 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-21 10:29:20,561 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:29:20,563 - root - INFO - Tarifa actualizada.
+2024-06-21 10:29:20,563 - root - INFO - El taxi se ha parado.
+2024-06-21 10:29:20,563 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-21 10:29:21,194 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:29:21,197 - root - INFO - Tarifa actualizada.
+2024-06-21 10:29:21,199 - root - INFO - Carrera finalizada. Importe total:0.06 €
+2024-06-21 10:29:21,199 - root - INFO - Taxímetro restablecido.
+2024-06-21 10:29:21,199 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-21 10:29:22,921 - root - INFO - Menu seleccionado: Ver Log

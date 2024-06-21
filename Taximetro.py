@@ -3,15 +3,20 @@ from datetime import datetime
 import streamlit as st
 import logging
 
+
+
+
 class Taximetro:
     """Clase que simula el funcionamiento de un taxímetro."""
 
+  
     def __init__(self):
         self.tarifa_por_minuto_movimiento = 3.0
         self.tarifa_por_minuto_parado = 1.2
         self.tarifa_base = 2.5
         self.reset()
-        self.logger.info ("Taxímetro inicializando con tarifas base.")
+        logger.info ("Taxímetro inicializando con tarifas base.")
+        
 
     def reset(self):
         self.en_marcha = False
@@ -22,7 +27,7 @@ class Taximetro:
         self.ultima_hora = None
         self.tiempo_movimiento = 0
         self.tiempo_parado = 0
-        self.logger.info ("Taxímetro restablecido.")
+        logger.info ("Taxímetro restablecido.")
 
 
     def iniciar(self):
@@ -32,7 +37,8 @@ class Taximetro:
         self.hora_inicio = time.time()
         self.ultima_hora = self.hora_inicio
         st.session_state.messages.append(f"{ahora()} - Inicia la carrera del taxi.")
-        self.logger.info ("Carrera iniciada.")
+        logger.info ("Carrera iniciada.")
+        
         
     def mover(self):
         if self.en_marcha and not self.en_movimiento:
@@ -40,7 +46,7 @@ class Taximetro:
             self.en_movimiento = True
             self.ultima_hora = time.time()
             st.session_state.messages.append(f"{ahora()} - El taxi se ha puesto en marcha.")
-            self.logger.info ("El taxi se ha puesto en marcha.")
+            logger.info ("El taxi se ha puesto en marcha.")
             
     def parar(self):
         if self.en_marcha and self.en_movimiento:
@@ -48,8 +54,9 @@ class Taximetro:
             self.en_movimiento = False
             self.ultima_hora = time.time()
             st.session_state.messages.append(f"{ahora()} - El taxi se ha parado.")
-            self.logger.info ("El taxi se ha parado.")
+            logger.info ("El taxi se ha parado.")
            
+
     def finalizar_carrera(self):
         if self.en_marcha:
             self.actualizar_tarifa()
@@ -59,7 +66,8 @@ class Taximetro:
             self.reset()
         else:
             st.session_state.messages.append(f"{ahora()} - No hay carrera en curso para finalizar.")
-            self.logger.warning("Intento de finalizar una carrera que no está en curso")
+            logger.warning("Intento de finalizar una carrera que no está en curso")
+
 
     def actualizar_tarifa(self):
         hora_actual = time.time()
@@ -72,16 +80,17 @@ class Taximetro:
                 self.tiempo_parado += tiempo_transcurrido
                 self.tarifa_total += tiempo_transcurrido * (self.tarifa_por_minuto_parado / 60)
             self.ultima_hora = hora_actual
-            self.logger.info ("Tarifa actualizada.")
+            logger.info ("Tarifa actualizada.")
 
     def cambiar_precios(self, nueva_tarifa_por_minuto_movimiento, nueva_tarifa_por_minuto_parado, nueva_tarifa_base):
             self.tarifa_por_minuto_movimiento = nueva_tarifa_por_minuto_movimiento
             self.tarifa_por_minuto_parado = nueva_tarifa_por_minuto_parado
             self.tarifa_base = nueva_tarifa_base
-            self.logger.info ("Actualización de tarifas realizada.")
+            logger.info ("Actualización de tarifas realizada.")
             self.reset()  # Llamar a reset después de cambiar las tarifas
             st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
             
+
 # Funcion para el log.
 def get_logger():
     # Crear un logger
@@ -105,9 +114,12 @@ def get_logger():
     if not logger.handlers:
         logger.addHandler(stream_handler)
         logger.addHandler(file_handler)
+
     return logger
 
 logger = get_logger()
+
+
 
 def leer_log():
     try:
@@ -122,6 +134,7 @@ def ahora():
     hora_actual = ahora.strftime("%H:%M:%S")
     return hora_actual
 
+
 usuarios = {
     "user1": "password1",
     "user2": "password2",
@@ -130,16 +143,19 @@ usuarios = {
     "user5": "password5",
 }
 
+
+
 def main():
     # Estilos personalizados con CSS
+
     st.markdown(
         """
         <style>
             .stApp {
-                background-color: #ADD8E6;  /* Fondo azul claro */
+                background-color: #FEE338;  /* Fondo amarillo mate */ 
             }
             .css-1d391kg {  /* Sidebar */
-                background-color: #FFFF00;  /* Fondo amarillo intenso */
+                 background-color: #FEE338;  /* Fondo amarillo mate */
             }
             .stTextInput, .stButton, .stNumberInput {
                 margin-bottom: 10px;  /* Espacio entre los elementos del formulario */
@@ -154,6 +170,8 @@ def main():
         """, 
         unsafe_allow_html=True
     )
+
+  
 
     try:
         menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
@@ -225,25 +243,31 @@ def main():
             elif menu_selection == "Ver Log":
                 st.markdown("### Visualización del Log")
                 st.text_area("", value=leer_log(), height=200)
+
             else:
                 col1, col2, col3, col4 = st.columns(4)
+
                 with col1:
                     if st.button("Iniciar Carrera"):
                         st.session_state.taximetro.iniciar()
                         st.session_state.tarifa_final = 0.0  # Reset tarifa total
                         logger.info("Botón 'Iniciar Carrera' presionado.")
+
                 with col2:
                     if st.button("Taxi en movimiento"):
                         st.session_state.taximetro.mover()
                         logger.info("Botón 'Taxi en movimiento' presionado.")
+
                 with col3:
                     if st.button("Taxi parado"):
                         st.session_state.taximetro.parar()
                         logger.info("Botón 'Taxi parado' presionado.")
+
                 with col4:
                     if st.button("Finalizar Carrera"):
                         st.session_state.taximetro.finalizar_carrera()
                         logger.info("Botón 'Finalizar carrera' presionado.")
+
                 st.text_area("Mensajes", value="\n".join(st.session_state.messages), height=200)
                 #st.text(f"Tarifa Total: €{st.session_state.tarifa_final:.2f}")
                 st.markdown(f"**Tarifa Total: €{st.session_state.tarifa_final:.2f}**")
