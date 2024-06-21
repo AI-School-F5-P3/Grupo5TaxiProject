@@ -16,7 +16,7 @@ class Taximetro:
         self.tarifa_base = 2.5
         self.reset()
         logger.info ("Taxímetro inicializando con tarifas base.")
-        logger.info ("Taxímetro inicializando con tarifas base.")
+        
 
     def reset(self):
         self.en_marcha = False
@@ -38,7 +38,7 @@ class Taximetro:
         self.ultima_hora = self.hora_inicio
         st.session_state.messages.append(f"{ahora()} - Inicia la carrera del taxi.")
         logger.info ("Carrera iniciada.")
-        logger.info ("Carrera iniciada.")
+        
         
     def mover(self):
         if self.en_marcha and not self.en_movimiento:
@@ -47,8 +47,7 @@ class Taximetro:
             self.ultima_hora = time.time()
             st.session_state.messages.append(f"{ahora()} - El taxi se ha puesto en marcha.")
             logger.info ("El taxi se ha puesto en marcha.")
-            logger.info ("El taxi se ha puesto en marcha.")
-
+            
     def parar(self):
         if self.en_marcha and self.en_movimiento:
             self.actualizar_tarifa()
@@ -193,7 +192,7 @@ def main():
                     submit_button = st.form_submit_button(label="Login")
                     if submit_button:
                         if usuario in usuarios and usuarios[usuario] == password:
-                        #if usuario in usuarios and bcrypt.checkpw(password.encode('utf-8'), usuarios[usuario]):
+                       
                             st.session_state.logged_in = True
                             st.success("Login realizado con éxito")
                         else:
