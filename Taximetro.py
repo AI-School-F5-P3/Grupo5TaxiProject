@@ -166,7 +166,7 @@ def main():
     )
     st.markdown(
         """
-        <h1 style='text-align: center;'>Taxímetro - G5</h1>
+        <h1 style='text-align: center;'>Taxi Driver</h1>
         """, 
         unsafe_allow_html=True
     )
