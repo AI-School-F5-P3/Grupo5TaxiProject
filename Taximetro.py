@@ -3,6 +3,32 @@ from datetime import datetime
 import streamlit as st
 import logging
 
+from sqlalchemy import create_engine, Column, Integer, Float, DateTime, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+Base = declarative_base()
+
+class Carrera(Base):
+    __tablename__ = 'carreras'
+
+    id = Column(Integer, primary_key=True)
+    fecha_inicio = Column(DateTime)
+    fecha_fin = Column(DateTime)
+    tiempo_movimiento = Column(Float)
+    tiempo_parado = Column(Float)
+    tarifa_final = Column(Float)
+
+    def __repr__(self):
+        return f"<Carrera(id={self.id}, fecha_inicio={self.fecha_inicio}, tarifa_final={self.tarifa_final})>"
+
+# Crear la conexión a la base de datos
+engine = create_engine('sqlite:///taximetro.db', echo=True)
+Base.metadata.create_all(engine)
+
+# Crear una sesión
+Session = sessionmaker(bind=engine)
+session = Session()
 
 
 
@@ -61,6 +87,7 @@ class Taximetro:
         if self.en_marcha:
             self.actualizar_tarifa()
             st.session_state.tarifa_final = self.tarifa_total + self.tarifa_base # cambio al actualizar precios
+            self.guardar_carrera()
             st.session_state.messages.append(f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {st.session_state.tarifa_final:.2f} €")
             logger.info(f"Carrera finalizada. Importe total:{self.tarifa_total:.2f} €") 
             self.reset()
@@ -89,7 +116,18 @@ class Taximetro:
             logger.info ("Actualización de tarifas realizada.")
             self.reset()  # Llamar a reset después de cambiar las tarifas
             st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
-            
+    
+    def guardar_carrera(self):
+        nueva_carrera = Carrera(
+            fecha_inicio=datetime.fromtimestamp(self.hora_inicio),
+            fecha_fin=datetime.now(),
+            tiempo_movimiento=self.tiempo_movimiento,
+            tiempo_parado=self.tiempo_parado,
+            tarifa_final=self.tarifa_total + self.tarifa_base
+        )
+        session.add(nueva_carrera)
+        session.commit()
+        logger.info(f"Carrera guardada en la base de datos: {nueva_carrera}")
 
 # Funcion para el log.
 def get_logger():
@@ -174,7 +212,7 @@ def main():
   
 
     try:
-        menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ayuda"]
+        menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ver historial", "Ayuda"]
         menu_selection = st.sidebar.selectbox("Menú", menu_options)
         logger.info(f"Menu seleccionado: {menu_selection}")
 
@@ -243,7 +281,12 @@ def main():
             elif menu_selection == "Ver Log":
                 st.markdown("### Visualización del Log")
                 st.text_area("", value=leer_log(), height=200)
-
+                
+            elif menu_selection == "Ver Historial":
+                st.markdown("### Historial de Carreras")
+                carreras = session.query(Carrera).all()
+                for carrera in carreras:
+                    st.write(f"Carrera {carrera.id}: Inicio: {carrera.fecha_inicio}, Fin: {carrera.fecha_fin}, Tarifa: {carrera.tarifa_final:.2f}€")
             else:
                 col1, col2, col3, col4 = st.columns(4)
 
