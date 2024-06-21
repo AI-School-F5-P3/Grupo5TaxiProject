@@ -156,3 +156,32 @@
 2024-06-21 10:16:52,644 - root - INFO - Taxímetro restablecido.
 2024-06-21 10:16:52,644 - root - INFO - Botón 'Finalizar carrera' presionado.
 2024-06-21 10:17:06,254 - root - INFO - Menu seleccionado: Ver Log
+2024-06-21 11:45:51,570 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 11:45:51,571 - root - INFO - Taxímetro restablecido.
+2024-06-21 11:45:51,571 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-21 11:45:54,391 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:00,306 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:02,162 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:05,058 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:05,061 - root - INFO - Carrera iniciada.
+2024-06-21 11:46:05,062 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-21 11:46:05,957 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:05,964 - root - INFO - Tarifa actualizada.
+2024-06-21 11:46:05,965 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-21 11:46:05,965 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-21 11:46:06,756 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:06,759 - root - INFO - Tarifa actualizada.
+2024-06-21 11:46:06,760 - root - INFO - El taxi se ha parado.
+2024-06-21 11:46:06,760 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-21 11:46:09,601 - root - INFO - Menu seleccionado: Login
+2024-06-21 11:46:09,609 - root - INFO - Tarifa actualizada.
+2024-06-21 11:46:09,610 - root - INFO - Carrera finalizada. Importe total:0.11 €
+2024-06-21 11:46:09,614 - root - INFO - Taxímetro restablecido.
+2024-06-21 11:46:09,615 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-21 11:46:17,300 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-21 11:46:21,695 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-21 11:46:21,700 - root - INFO - Actualización de tarifas realizada.
+2024-06-21 11:46:21,701 - root - INFO - Taxímetro restablecido.
+2024-06-21 11:46:24,328 - root - INFO - Menu seleccionado: Ver Log
+2024-06-21 11:46:31,559 - root - INFO - Menu seleccionado: Ayuda
+2024-06-21 11:47:59,462 - root - INFO - Menu seleccionado: Ver Log
