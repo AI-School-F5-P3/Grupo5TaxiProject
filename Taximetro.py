@@ -2,8 +2,16 @@ import time
 from datetime import datetime
 import streamlit as st
 import logging
+import mysql.connector
 
-
+# Configuración de la conexión a la base de datos
+def conectar_bd():
+    return mysql.connector.connect(
+        host="3306",
+        user="root",
+        password="root",
+        database="taximetrodb"
+    )
 
 
 class Taximetro:
@@ -62,6 +70,7 @@ class Taximetro:
             st.session_state.tarifa_final = self.tarifa_total + self.tarifa_base # cambio al actualizar precios
             st.session_state.messages.append(f"{ahora()} - Carrera finalizada. Tiempo de marcha y paro : {self.tiempo_movimiento + self.tiempo_parado :.2f} segundos, Importe total: {st.session_state.tarifa_final:.2f} €")
             logger.info(f"Carrera finalizada. Importe total:{self.tarifa_total:.2f} €") 
+            self.guardar_carrera()
             self.reset()
         else:
             st.session_state.messages.append(f"{ahora()} - No hay carrera en curso para finalizar.")
@@ -88,7 +97,37 @@ class Taximetro:
             logger.info ("Actualización de tarifas realizada.")
             self.reset()  # Llamar a reset después de cambiar las tarifas
             st.session_state.messages.append(f"{ahora()} - Precios actualizados: Movimiento €{self.tarifa_por_minuto_movimiento}/min, Parado €{self.tarifa_por_minuto_parado}/min, Base €{self.tarifa_base}.")
-            
+            self.guardar_tarifas()
+
+    def guardar_carrera(self):
+        conn = conectar_bd()
+        cursor = conn.cursor()
+        query = "INSERT INTO carreras (tarifa_total, tiempo_movimiento, tiempo_parado, hora_inicio, hora_fin) VALUES (%s, %s, %s, %s, %s)"
+        cursor.execute(query, (
+            self.tarifa_total,
+            self.tiempo_movimiento,
+            self.tiempo_parado,
+            datetime.fromtimestamp(self.hora_inicio),
+            datetime.fromtimestamp(time.time())
+        ))
+        conn.commit()
+        cursor.close()
+        conn.close()
+        logger.info("Carrera guardada en la base de datos.")
+
+    def guardar_tarifas(self):
+        conn = conectar_bd()
+        cursor = conn.cursor()
+        query = "INSERT INTO tarifas (tarifa_movimiento, tarifa_parado, tarifa_base) VALUES (%s, %s, %s)"
+        cursor.execute(query, (
+            self.tarifa_por_minuto_movimiento,
+            self.tarifa_por_minuto_parado,
+            self.tarifa_base
+        ))
+        conn.commit()
+        cursor.close()
+        conn.close()
+        logger.info("Tarifas guardadas en la base de datos.")
 
 # Funcion para el log.
 def get_logger():
