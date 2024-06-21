@@ -10,3 +10,27 @@
 2024-06-19 08:39:10,729 - root - INFO - Taxímetro restablecido.
 2024-06-19 08:39:10,730 - root - INFO - Taxímetro inicializando con tarifas base.
 2024-06-19 08:39:10,730 - root - INFO - Sesión inicializada.
+2024-06-21 10:15:19,629 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-21 10:15:19,631 - root - INFO - Taxímetro restablecido.
+2024-06-21 10:15:19,631 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-21 10:15:19,632 - root - INFO - Sesión inicializada.
+2024-06-21 10:15:24,320 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-21 10:15:24,321 - root - INFO - Carrera iniciada.
+2024-06-21 10:15:24,321 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-21 10:15:25,537 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-21 10:15:25,538 - root - INFO - Tarifa actualizada.
+2024-06-21 10:15:25,539 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-21 10:15:25,539 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-21 10:15:26,319 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-21 10:15:26,323 - root - INFO - Tarifa actualizada.
+2024-06-21 10:15:26,323 - root - INFO - El taxi se ha parado.
+2024-06-21 10:15:26,323 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-21 10:15:27,169 - root - INFO - Menu seleccionado: Seleccione Opción
+2024-06-21 10:15:27,171 - root - INFO - Tarifa actualizada.
+2024-06-21 10:15:27,172 - root - INFO - Carrera finalizada. Importe total:2.58 €
+2024-06-21 10:15:27,172 - root - INFO - Taxímetro restablecido.
+2024-06-21 10:15:27,172 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-21 10:15:31,338 - root - INFO - Menu seleccionado: Cambiar Tarifas
+2024-06-21 10:15:32,829 - root - INFO - Menu seleccionado: Ver Log
+2024-06-21 10:16:40,432 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-21 10:16:40,432 - root - ERROR - Error inesperado: 'Taximetro' object has no attribute 'logger'
