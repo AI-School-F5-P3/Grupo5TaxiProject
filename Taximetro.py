@@ -154,8 +154,6 @@ def get_logger():
 
 logger = get_logger()
 
-
-
 def leer_log():
     try:
         with open('taximetro.log', 'r') as file:
@@ -163,12 +161,10 @@ def leer_log():
     except FileNotFoundError:
         return "No se encontró el archivo de log."
 
-
 def ahora():
     ahora = datetime.now()
     hora_actual = ahora.strftime("%H:%M:%S")
     return hora_actual
-
 
 usuarios = {
     "user1": "password1",
@@ -178,11 +174,8 @@ usuarios = {
     "user5": "password5",
 }
 
-
-
 def main():
     # Estilos personalizados con CSS
-
     st.markdown(
         """
         <style>
@@ -206,8 +199,6 @@ def main():
         unsafe_allow_html=True
     )
 
-  
-
     try:
         menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ver Historial", "Ayuda"]
         menu_selection = st.sidebar.selectbox("Menú", menu_options)
@@ -218,7 +209,6 @@ def main():
             st.session_state.messages = []
             st.session_state.tarifa_final = 0.0
             st.session_state.logged_in = False
-
         if not st.session_state.logged_in:
             if menu_selection == "Login":
                 with st.form("form_login"):
@@ -243,7 +233,6 @@ def main():
                 </div>
                 """
                 st.markdown(html_warning, unsafe_allow_html=True)
-
         else:
             if menu_selection == "Cambiar Precios":
                 with st.form("form_cambiar_precios"):
@@ -254,7 +243,6 @@ def main():
                     if submit_button:
                         st.session_state.taximetro.cambiar_precios(nueva_tarifa_movimiento, nueva_tarifa_parado, nueva_tarifa_base)
                         st.success("Tarifas actualizadas correctamente.")
-            
             elif menu_selection == "Ayuda":
                 html_ayuda = """
                     <div style='font-size:xx-large; color:black;'>
@@ -273,17 +261,14 @@ def main():
                     </div>
                 """
                 st.markdown(html_ayuda, unsafe_allow_html=True)
-                
             elif menu_selection == "Ver Log":
                 st.markdown("### Visualización del Log")
                 st.text_area("", value=leer_log(), height=200)
-
             elif menu_selection == "Ver Historial":
                 st.markdown("### Historial de Carreras")
                 carreras = session.query(Carrera).all()
                 for carrera in carreras:
                     st.write(f"Carrera {carrera.id}: Inicio: {carrera.fecha_inicio}, Fin: {carrera.fecha_fin}, Tarifa: {carrera.tarifa_final:.2f}€")
-            
             else:
                 col1, col2, col3, col4 = st.columns(4)
 
