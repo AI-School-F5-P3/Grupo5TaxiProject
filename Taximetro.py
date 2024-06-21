@@ -203,7 +203,7 @@ def main():
                 <div style='display: flex; justify-content: center; align-items: center; height: 50vh;'>
                     <div style='font-size:  xx-large; color: black; text-align: center;'>
                         <p>Bienvenido al Taxímetro de Precisión.</p>
-                        <p>Debe realizar login para utilizar el Taxímetro.</p>
+                        <p>Debe realizar Login para utilizar el Taxímetro.</p>
                         <p>Para detalles del funcionamiento elija la opción Ayuda.</p>
                     </div>
                 </div>
