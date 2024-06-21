@@ -152,10 +152,10 @@ def main():
         """
         <style>
             .stApp {
-                background-color: #ADD8E6;  /* Fondo azul claro */
+                background-color: #FEE338;  /* Fondo amarillo mate */ 
             }
             .css-1d391kg {  /* Sidebar */
-                background-color: #FFFF00;  /* Fondo amarillo intenso */
+                 background-color: #FEE338;  /* Fondo amarillo mate */
             }
             .stTextInput, .stButton, .stNumberInput {
                 margin-bottom: 10px;  /* Espacio entre los elementos del formulario */
