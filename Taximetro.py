@@ -6,7 +6,6 @@ import logging
 from sqlalchemy import create_engine, Column, Integer, Float, DateTime, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-import pandas as pd
 
 Base = declarative_base()
 
@@ -30,12 +29,8 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-
-
 class Taximetro:
     """Clase que simula el funcionamiento de un taxímetro."""
-
-  
     def __init__(self):
         self.tarifa_por_minuto_movimiento = 3.0
         self.tarifa_por_minuto_parado = 1.2
@@ -43,7 +38,6 @@ class Taximetro:
         self.reset()
         logger.info ("Taxímetro inicializando con tarifas base.")
         
-
     def reset(self):
         self.en_marcha = False
         self.en_movimiento = False
@@ -215,7 +209,7 @@ def main():
   
 
     try:
-        menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ver historial", "Ayuda"]
+        menu_options = ["Taxímetro", "Login", "Cambiar Precios", "Ver Log", "Ver Historial", "Ayuda"]
         menu_selection = st.sidebar.selectbox("Menú", menu_options)
         logger.info(f"Menu seleccionado: {menu_selection}")
 
@@ -283,31 +277,13 @@ def main():
             elif menu_selection == "Ver Log":
                 st.markdown("### Visualización del Log")
                 st.text_area("", value=leer_log(), height=200)
-                
+
             elif menu_selection == "Ver Historial":
-                st.write("## Historial de Carreras")
-                carreras = obtener_carreras()
-                if carreras:
-                    data = {
-                        "ID": [],
-                        "Fecha Inicio": [],
-                        "Fecha Fin": [],
-                        "Tiempo Movimiento (s)": [],
-                        "Tiempo Parado (s)": [],
-                        "Tarifa Final (€)": []
-                    }
-                    for carrera in carreras:
-                        data["ID"].append(carrera.id)
-                        data["Fecha Inicio"].append(carrera.fecha_inicio)
-                        data["Fecha Fin"].append(carrera.fecha_fin)
-                        data["Tiempo Movimiento (s)"].append(carrera.tiempo_movimiento)
-                        data["Tiempo Parado (s)"].append(carrera.tiempo_parado)
-                        data["Tarifa Final (€)"].append(carrera.tarifa_final)
-                    
-                    df = pd.DataFrame(data)
-                    st.dataframe(df)
-                else:
-                    st.write("No hay carreras registradas.")
+                st.markdown("### Historial de Carreras")
+                carreras = session.query(Carrera).all()
+                for carrera in carreras:
+                    st.write(f"Carrera {carrera.id}: Inicio: {carrera.fecha_inicio}, Fin: {carrera.fecha_fin}, Tarifa: {carrera.tarifa_final:.2f}€")
+            
             else:
                 col1, col2, col3, col4 = st.columns(4)
 
