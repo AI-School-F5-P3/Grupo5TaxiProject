@@ -270,9 +270,19 @@ def main():
             # Menu para ver historial de carreras (bbdd) en Streamlit.    
             elif menu_selection == "Ver Historial":
                 st.markdown("### Historial de Carreras")
-                carreras = session.query(Carrera).all()
-                for carrera in carreras:
-                    st.write(f"Carrera {carrera.id}: Inicio: {carrera.fecha_inicio}, Fin: {carrera.fecha_fin}, Tarifa: {carrera.tarifa_final:.2f}€")
+                carreras = obtener_carreras()
+                if carreras:
+                    historial_text = ""
+                    for carrera in carreras:
+                        historial_text += f"Carrera {carrera.id}:\n"
+                        historial_text += f"  Inicio: {carrera.fecha_inicio}\n"
+                        historial_text += f"  Fin: {carrera.fecha_fin}\n"
+                        historial_text += f"  Tiempo en movimiento: {carrera.tiempo_movimiento:.2f} segundos\n"
+                        historial_text += f"  Tiempo parado: {carrera.tiempo_parado:.2f} segundos\n"
+                        historial_text += f"  Tarifa final: {carrera.tarifa_final:.2f}€\n\n"
+                    st.text_area("", value=historial_text, height=400)
+                else:
+                    st.write("No hay carreras registradas en la base de datos.")
             else:
                 col1, col2, col3, col4 = st.columns(4)
 
