@@ -23,19 +23,19 @@ Taxi Driver es una aplicación que simula el funcionamiento de un taxímetro. Ca
 
 ## Instalación
 
-1. Crea un directorio en tu PC donde clonar el repositorio localmente.
+1. Crea un directorio en tu PC donde clonar el repositorio localmente:
    ```sh
     mk taxi-driver
    ```
-2. Clonar el repositorio:
-    ```sh
-    git clone https://github.com/AI-School-F5-P3/Grupo5TaxiProject.git
-    ```
-3. Navegar al directorio del proyecto:
+2. Navegar al directorio del proyecto:
     ```sh
     cd taxi-driver
     ```
-3. Crear un entorno virtual e instalar las dependencias:
+3. Clonar el repositorio:
+    ```sh
+    git clone https://github.com/AI-School-F5-P3/Grupo5TaxiProject.git
+    ```
+4. Crear un entorno virtual e instalar las dependencias:
     ```sh
     python -m venv venv
     source venv/bin/activate  # En Windows, usa `venv\Scripts\activate`
