@@ -1,187 +1,146 @@
-2024-06-19 10:35:54,999 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:35:54,999 - root - INFO - Taxímetro restablecido.
-2024-06-19 10:35:55,012 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-19 10:35:55,013 - root - INFO - Sesión inicializada.
-2024-06-19 10:35:55,274 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:35:55,274 - root - INFO - Taxímetro restablecido.
-2024-06-19 10:35:55,274 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-19 10:35:55,274 - root - INFO - Sesión inicializada.
-2024-06-19 10:36:06,619 - root - INFO - Menu seleccionado: Ver Log
-2024-06-19 10:40:24,829 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-19 10:40:27,910 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-19 10:40:28,001 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-19 10:40:28,005 - root - INFO - Taxímetro restablecido.
-2024-06-19 10:40:31,886 - root - INFO - Menu seleccionado: Ver Log
-2024-06-19 10:40:44,256 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:40:46,061 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:40:46,062 - root - INFO - Carrera iniciada.
-2024-06-19 10:40:46,062 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-19 10:40:46,607 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:40:46,609 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
-2024-06-19 10:40:46,610 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-19 10:40:46,610 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-19 10:40:47,106 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:40:47,110 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
-2024-06-19 10:40:47,110 - root - INFO - El taxi se ha parado.
-2024-06-19 10:40:47,110 - root - INFO - Botón 'Taxi parado' presionado.
-2024-06-19 10:40:47,513 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:40:47,515 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
-2024-06-19 10:40:47,515 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-19 10:40:47,516 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-19 10:40:48,457 - root - INFO - Menu seleccionado: Seleccione Opción
-2024-06-19 10:40:48,462 - root - INFO - Precios actualizados: Movimiento €3/min, Parado €1.2/min, Base €100.0.
-2024-06-19 10:40:48,462 - root - INFO - Carrera finalizada. Importe total:0.09 €
-2024-06-19 10:40:48,464 - root - INFO - Taxímetro restablecido.
-2024-06-19 10:40:48,465 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-19 10:40:50,426 - root - INFO - Menu seleccionado: Ver Log
-2024-06-19 11:02:26,101 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:02:26,101 - root - INFO - Taxímetro restablecido.
-2024-06-19 11:02:26,105 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-19 11:02:26,105 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-19 11:02:33,076 - root - INFO - Menu seleccionado: Login
-2024-06-19 11:02:38,327 - root - INFO - Menu seleccionado: Login
-2024-06-19 11:02:45,325 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:02:49,273 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:02:49,273 - root - INFO - Carrera iniciada.
-2024-06-19 11:02:49,276 - root - INFO - Carrera iniciada.
-2024-06-19 11:02:49,276 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-19 11:02:53,397 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:02:53,401 - root - INFO - Tarifa actualizada.
-2024-06-19 11:02:53,402 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-19 11:02:53,402 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-19 11:02:53,402 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-19 11:02:54,167 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:02:54,171 - root - INFO - Tarifa actualizada.
-2024-06-19 11:02:54,171 - root - INFO - El taxi se ha parado.
-2024-06-19 11:02:54,171 - root - INFO - Botón 'Taxi parado' presionado.
-2024-06-19 11:02:55,047 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:02:55,051 - root - INFO - Tarifa actualizada.
-2024-06-19 11:02:55,052 - root - INFO - Carrera finalizada. Importe total:0.14 €
-2024-06-19 11:02:55,053 - root - INFO - Taxímetro restablecido.
-2024-06-19 11:02:55,053 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-19 11:02:58,532 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-19 11:03:01,826 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-19 11:03:01,830 - root - INFO - Taxímetro restablecido.
-2024-06-19 11:03:01,830 - root - INFO - Actualización de tarifas realizada.
-2024-06-19 11:03:13,041 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:03:14,276 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:03:14,281 - root - INFO - Carrera iniciada.
-2024-06-19 11:03:14,281 - root - INFO - Carrera iniciada.
-2024-06-19 11:03:14,281 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-19 11:03:18,688 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:03:18,695 - root - INFO - Tarifa actualizada.
-2024-06-19 11:03:18,696 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-19 11:03:18,697 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-19 11:03:18,698 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-19 11:03:19,137 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:03:19,141 - root - INFO - Tarifa actualizada.
-2024-06-19 11:03:19,142 - root - INFO - El taxi se ha parado.
-2024-06-19 11:03:19,142 - root - INFO - Botón 'Taxi parado' presionado.
-2024-06-19 11:03:19,980 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-19 11:03:19,989 - root - INFO - Tarifa actualizada.
-2024-06-19 11:03:19,990 - root - INFO - Carrera finalizada. Importe total:0.13 €
-2024-06-19 11:03:19,990 - root - INFO - Taxímetro restablecido.
-2024-06-19 11:03:19,990 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-19 11:03:25,058 - root - INFO - Menu seleccionado: Ver Log
-2024-06-20 17:44:02,663 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:44:02,663 - root - INFO - Taxímetro restablecido.
-2024-06-20 17:44:02,663 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-20 17:44:02,663 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-20 17:44:08,707 - root - INFO - Menu seleccionado: Login
-2024-06-20 17:44:18,709 - root - INFO - Menu seleccionado: Login
-2024-06-20 17:44:29,473 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:44:30,863 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:44:30,872 - root - INFO - Carrera iniciada.
-2024-06-20 17:44:30,872 - root - INFO - Carrera iniciada.
-2024-06-20 17:44:30,872 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-20 17:44:33,657 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:44:33,661 - root - INFO - Tarifa actualizada.
-2024-06-20 17:44:33,665 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-20 17:44:33,667 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-20 17:44:33,670 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-20 17:44:35,707 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:44:35,715 - root - INFO - Tarifa actualizada.
-2024-06-20 17:44:35,715 - root - INFO - El taxi se ha parado.
-2024-06-20 17:44:35,717 - root - INFO - Botón 'Taxi parado' presionado.
-2024-06-20 17:44:37,246 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:44:37,252 - root - INFO - Tarifa actualizada.
-2024-06-20 17:44:37,270 - root - INFO - Carrera finalizada. Importe total:0.19 €
-2024-06-20 17:44:37,270 - root - INFO - Taxímetro restablecido.
-2024-06-20 17:44:37,284 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-20 17:45:16,784 - root - INFO - Menu seleccionado: Ver Log
-2024-06-20 17:48:00,881 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:48:00,883 - root - INFO - Taxímetro restablecido.
-2024-06-20 17:48:00,883 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-20 17:48:00,883 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-20 17:48:07,657 - root - INFO - Menu seleccionado: Login
-2024-06-20 17:48:22,149 - root - INFO - Menu seleccionado: Login
-2024-06-20 17:48:26,274 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:48:27,510 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:48:27,510 - root - INFO - Carrera iniciada.
-2024-06-20 17:48:27,510 - root - INFO - Carrera iniciada.
-2024-06-20 17:48:27,524 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-20 17:48:29,703 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:48:29,727 - root - INFO - Tarifa actualizada.
-2024-06-20 17:48:29,727 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-20 17:48:29,727 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-20 17:48:29,727 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-20 17:48:31,925 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-20 17:48:31,934 - root - INFO - Tarifa actualizada.
-2024-06-20 17:48:31,937 - root - INFO - Carrera finalizada. Importe total:0.15 €
-2024-06-20 17:48:31,937 - root - INFO - Taxímetro restablecido.
-2024-06-20 17:48:31,937 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-20 17:48:34,986 - root - INFO - Menu seleccionado: Ver Log
-2024-06-20 17:48:59,631 - root - INFO - Menu seleccionado: Login
-2024-06-21 10:16:20,665 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 10:16:20,665 - root - INFO - Taxímetro restablecido.
-2024-06-21 10:16:20,665 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-21 10:16:29,444 - root - INFO - Menu seleccionado: Login
-2024-06-21 10:16:40,267 - root - INFO - Menu seleccionado: Login
-2024-06-21 10:16:43,287 - root - INFO - Menu seleccionado: Login
-2024-06-21 10:16:47,903 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 10:16:49,210 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 10:16:49,214 - root - INFO - Carrera iniciada.
-2024-06-21 10:16:49,214 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-21 10:16:51,384 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 10:16:51,388 - root - INFO - Tarifa actualizada.
-2024-06-21 10:16:51,388 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-21 10:16:51,388 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-21 10:16:52,052 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 10:16:52,058 - root - INFO - Tarifa actualizada.
-2024-06-21 10:16:52,059 - root - INFO - El taxi se ha parado.
-2024-06-21 10:16:52,059 - root - INFO - Botón 'Taxi parado' presionado.
-2024-06-21 10:16:52,640 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 10:16:52,643 - root - INFO - Tarifa actualizada.
-2024-06-21 10:16:52,644 - root - INFO - Carrera finalizada. Importe total:0.09 €
-2024-06-21 10:16:52,644 - root - INFO - Taxímetro restablecido.
-2024-06-21 10:16:52,644 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-21 10:17:06,254 - root - INFO - Menu seleccionado: Ver Log
-2024-06-21 11:45:51,570 - root - INFO - Menu seleccionado: Taxímetro
-2024-06-21 11:45:51,571 - root - INFO - Taxímetro restablecido.
-2024-06-21 11:45:51,571 - root - INFO - Taxímetro inicializando con tarifas base.
-2024-06-21 11:45:54,391 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:00,306 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:02,162 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:05,058 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:05,061 - root - INFO - Carrera iniciada.
-2024-06-21 11:46:05,062 - root - INFO - Botón 'Iniciar Carrera' presionado.
-2024-06-21 11:46:05,957 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:05,964 - root - INFO - Tarifa actualizada.
-2024-06-21 11:46:05,965 - root - INFO - El taxi se ha puesto en marcha.
-2024-06-21 11:46:05,965 - root - INFO - Botón 'Taxi en movimiento' presionado.
-2024-06-21 11:46:06,756 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:06,759 - root - INFO - Tarifa actualizada.
-2024-06-21 11:46:06,760 - root - INFO - El taxi se ha parado.
-2024-06-21 11:46:06,760 - root - INFO - Botón 'Taxi parado' presionado.
-2024-06-21 11:46:09,601 - root - INFO - Menu seleccionado: Login
-2024-06-21 11:46:09,609 - root - INFO - Tarifa actualizada.
-2024-06-21 11:46:09,610 - root - INFO - Carrera finalizada. Importe total:0.11 €
-2024-06-21 11:46:09,614 - root - INFO - Taxímetro restablecido.
-2024-06-21 11:46:09,615 - root - INFO - Botón 'Finalizar carrera' presionado.
-2024-06-21 11:46:17,300 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-21 11:46:21,695 - root - INFO - Menu seleccionado: Cambiar Precios
-2024-06-21 11:46:21,700 - root - INFO - Actualización de tarifas realizada.
-2024-06-21 11:46:21,701 - root - INFO - Taxímetro restablecido.
-2024-06-21 11:46:24,328 - root - INFO - Menu seleccionado: Ver Log
-2024-06-21 11:46:31,559 - root - INFO - Menu seleccionado: Ayuda
-2024-06-21 11:47:59,462 - root - INFO - Menu seleccionado: Ver Log
+2024-06-24 10:18:26,402 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:18:26,403 - root - INFO - Taxímetro restablecido.
+2024-06-24 10:18:26,403 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-24 10:18:29,305 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:29,305 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:29,306 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:29,306 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:29,309 - root - INFO - Menu seleccionado: Login
+2024-06-24 10:18:32,769 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:32,769 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:32,777 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:32,779 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:32,782 - root - INFO - Menu seleccionado: Ver Log
+2024-06-24 10:18:32,782 - root - INFO - Taxímetro restablecido.
+2024-06-24 10:18:32,783 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-24 10:18:36,560 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:36,561 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:36,561 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:36,562 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:36,565 - root - INFO - Menu seleccionado: Login
+2024-06-24 10:18:39,638 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:39,638 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:39,639 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:39,639 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:39,643 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:18:40,331 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:40,331 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:40,333 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:40,334 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:40,337 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:18:40,340 - root - INFO - Carrera iniciada.
+2024-06-24 10:18:40,341 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-24 10:18:41,975 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:41,976 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:41,977 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:41,978 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:41,981 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:18:41,984 - root - INFO - Tarifa actualizada.
+2024-06-24 10:18:41,985 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-24 10:18:41,986 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-24 10:18:43,342 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:43,343 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:43,343 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:43,344 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:43,348 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:18:43,351 - root - INFO - Tarifa actualizada.
+2024-06-24 10:18:43,351 - root - INFO - El taxi se ha parado.
+2024-06-24 10:18:43,351 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-24 10:18:43,928 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:43,929 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:43,929 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:43,930 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:43,934 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:18:43,940 - root - INFO - Tarifa actualizada.
+2024-06-24 10:18:43,944 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:43,946 - sqlalchemy.engine.Engine - INFO - INSERT INTO carreras (fecha_inicio, fecha_fin, tiempo_movimiento, tiempo_parado, tarifa_final) VALUES (?, ?, ?, ?, ?)
+2024-06-24 10:18:43,946 - sqlalchemy.engine.Engine - INFO - [generated in 0.00066s] ('2024-06-24 10:18:40.340085', '2024-06-24 10:18:43.941666', 1.3660080432891846, 2.2337162494659424, 2.612974727153778)
+2024-06-24 10:18:43,954 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:43,960 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:43,964 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras 
+WHERE carreras.id = ?
+2024-06-24 10:18:43,965 - sqlalchemy.engine.Engine - INFO - [generated in 0.00095s] (1,)
+2024-06-24 10:18:43,966 - root - INFO - Carrera guardada en la base de datos: <Carrera(id=1, fecha_inicio=2024-06-24 10:18:40.340085, tarifa_final=2.612974727153778)>
+2024-06-24 10:18:43,966 - root - INFO - Carrera finalizada. Importe total:0.11 €
+2024-06-24 10:18:43,967 - root - INFO - Taxímetro restablecido.
+2024-06-24 10:18:43,967 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-24 10:18:46,745 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:46,745 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:46,745 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:46,746 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:46,749 - root - INFO - Menu seleccionado: Ver Log
+2024-06-24 10:18:49,323 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:49,324 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:18:49,324 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:18:49,325 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:18:49,327 - root - INFO - Menu seleccionado: Ver Historial
+2024-06-24 10:18:49,329 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:18:49,331 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras
+2024-06-24 10:18:49,332 - sqlalchemy.engine.Engine - INFO - [generated in 0.00066s] ()
+2024-06-24 10:19:04,529 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:04,530 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:04,530 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:04,531 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:04,533 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-24 10:19:08,297 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:08,297 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:08,297 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:08,298 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:08,301 - root - INFO - Menu seleccionado: Cambiar Precios
+2024-06-24 10:19:08,304 - root - INFO - Actualización de tarifas realizada.
+2024-06-24 10:19:08,304 - root - INFO - Taxímetro restablecido.
+2024-06-24 10:19:10,224 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:10,225 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:10,225 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:10,225 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:10,228 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:19:11,147 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:11,148 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:11,149 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:11,150 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:11,151 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:19:11,154 - root - INFO - Carrera iniciada.
+2024-06-24 10:19:11,155 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-24 10:19:13,442 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:13,443 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:13,444 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:13,446 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:13,448 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:19:13,451 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-24 10:19:14,105 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:14,106 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:14,106 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:14,108 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:14,112 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:19:14,115 - root - INFO - Tarifa actualizada.
+2024-06-24 10:19:14,115 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-24 10:19:14,116 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-24 10:19:15,177 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:15,179 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:15,179 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:15,181 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:15,184 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:19:15,191 - root - INFO - Tarifa actualizada.
+2024-06-24 10:19:15,194 - sqlalchemy.engine.Engine - INFO - INSERT INTO carreras (fecha_inicio, fecha_fin, tiempo_movimiento, tiempo_parado, tarifa_final) VALUES (?, ?, ?, ?, ?)
+2024-06-24 10:19:15,195 - sqlalchemy.engine.Engine - INFO - [cached since 31.25s ago] ('2024-06-24 10:19:11.154902', '2024-06-24 10:19:15.193456', 1.075965166091919, 2.9606454372406006, 1000.1130111670494)
+2024-06-24 10:19:15,198 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:15,204 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:15,204 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras 
+WHERE carreras.id = ?
+2024-06-24 10:19:15,205 - sqlalchemy.engine.Engine - INFO - [cached since 31.24s ago] (2,)
+2024-06-24 10:19:15,206 - root - INFO - Carrera guardada en la base de datos: <Carrera(id=2, fecha_inicio=2024-06-24 10:19:11.154902, tarifa_final=1000.1130111670494)>
+2024-06-24 10:19:15,207 - root - INFO - Carrera finalizada. Importe total:0.11 €
+2024-06-24 10:19:15,207 - root - INFO - Taxímetro restablecido.
+2024-06-24 10:19:15,207 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-24 10:19:17,954 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:17,956 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:19:17,957 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:19:17,959 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:19:17,962 - root - INFO - Menu seleccionado: Ver Historial
+2024-06-24 10:19:17,964 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:19:17,966 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras
+2024-06-24 10:19:17,966 - sqlalchemy.engine.Engine - INFO - [generated in 0.00057s] ()
