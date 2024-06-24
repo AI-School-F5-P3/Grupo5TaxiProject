@@ -2,6 +2,7 @@ import time
 from datetime import datetime
 import streamlit as st
 import logging
+import hashlib
 
 # Biblioteca para bbdd
 from sqlalchemy import create_engine, Column, Integer, Float, DateTime, String
@@ -173,13 +174,19 @@ def ahora():
     hora_actual = ahora.strftime("%H:%M:%S")
     return hora_actual
 
+def hash_string(input_string):
+    return hashlib.md5(input_string.encode()).hexdigest()
+
+
 usuarios = {
-    "user1": "password1",
-    "user2": "password2",
-    "user3": "password3",
-    "user4": "password4",
-    "user5": "password5",
+    "user1": "7c6a180b36896a0a8c02787eeafb0e4c",
+    "user2": "6cb75f652a9b52798eb6cf2201057c73",
+    "user3": "819b0643d6b89dc9b579fdfc9094f28e",
+    "user4": "34cc93ece0ba9e3f6f235d4af979b16c",
+    "user5": "db0edd04aaac4506f7edab03ac855d56",
 }
+
+
 
 def main():
     # Estilos personalizados con CSS
@@ -239,7 +246,7 @@ def main():
                     password = st.text_input("Password", type="password")
                     submit_button = st.form_submit_button(label="Login")
                     if submit_button:
-                        if usuario in usuarios and usuarios[usuario] == password:                      
+                        if usuario in usuarios and usuarios[usuario] == hash_string(password):                      
                             st.session_state.logged_in = True
                             st.success("Login realizado con éxito")
                         else:
