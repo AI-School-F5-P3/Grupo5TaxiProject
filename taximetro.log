@@ -185,3 +185,123 @@
 2024-06-21 11:46:24,328 - root - INFO - Menu seleccionado: Ver Log
 2024-06-21 11:46:31,559 - root - INFO - Menu seleccionado: Ayuda
 2024-06-21 11:47:59,462 - root - INFO - Menu seleccionado: Ver Log
+2024-06-24 09:57:41,470 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:57:41,472 - root - INFO - Taxímetro restablecido.
+2024-06-24 09:57:41,472 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-24 09:57:52,323 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:57:52,324 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:57:52,324 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:57:52,325 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:57:52,332 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:57:52,333 - root - INFO - Taxímetro restablecido.
+2024-06-24 09:57:52,334 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-24 09:58:50,360 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:58:50,361 - root - INFO - Taxímetro restablecido.
+2024-06-24 09:58:50,361 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-24 09:58:52,493 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:58:52,493 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:58:52,495 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:58:52,496 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:58:52,501 - root - INFO - Menu seleccionado: Login
+2024-06-24 09:58:57,174 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:58:57,176 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:58:57,177 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:58:57,178 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:58:57,189 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:58:57,189 - root - INFO - Taxímetro restablecido.
+2024-06-24 09:58:57,190 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-24 09:58:59,014 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:58:59,015 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:58:59,015 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:58:59,016 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:58:59,025 - root - INFO - Menu seleccionado: Login
+2024-06-24 09:59:01,791 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:01,793 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:01,793 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:01,794 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:01,800 - root - INFO - Menu seleccionado: Ver Historial
+2024-06-24 09:59:01,804 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:01,812 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras
+2024-06-24 09:59:01,818 - sqlalchemy.engine.Engine - INFO - [generated in 0.00622s] ()
+2024-06-24 09:59:05,051 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:05,051 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:05,053 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:05,053 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:05,058 - root - INFO - Menu seleccionado: Ver Log
+2024-06-24 09:59:08,192 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:08,193 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:08,193 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:08,194 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:08,199 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:59:09,091 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:09,092 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:09,093 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:09,093 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:09,099 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:59:09,102 - root - INFO - Carrera iniciada.
+2024-06-24 09:59:09,103 - root - INFO - Botón 'Iniciar Carrera' presionado.
+2024-06-24 09:59:10,030 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:10,031 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:10,031 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:10,032 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:10,036 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:59:10,042 - root - INFO - Tarifa actualizada.
+2024-06-24 09:59:10,043 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-24 09:59:10,044 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-24 09:59:10,966 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:10,967 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:10,968 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:10,968 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:10,973 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:59:10,976 - root - INFO - Tarifa actualizada.
+2024-06-24 09:59:10,977 - root - INFO - El taxi se ha parado.
+2024-06-24 09:59:10,977 - root - INFO - Botón 'Taxi parado' presionado.
+2024-06-24 09:59:11,672 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:11,672 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:11,674 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:11,674 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:11,678 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:59:11,682 - root - INFO - Tarifa actualizada.
+2024-06-24 09:59:11,684 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-24 09:59:11,684 - root - INFO - Botón 'Taxi en movimiento' presionado.
+2024-06-24 09:59:12,450 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:12,451 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:12,451 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:12,452 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:12,456 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 09:59:12,460 - root - INFO - Tarifa actualizada.
+2024-06-24 09:59:12,462 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:12,465 - sqlalchemy.engine.Engine - INFO - INSERT INTO carreras (fecha_inicio, fecha_fin, tiempo_movimiento, tiempo_parado, tarifa_final) VALUES (?, ?, ?, ?, ?)
+2024-06-24 09:59:12,469 - sqlalchemy.engine.Engine - INFO - [generated in 0.00290s] ('2024-06-24 09:59:09.102572', '2024-06-24 09:59:12.460845', 1.7098827362060547, 1.6437489986419678, 2.618369116783142)
+2024-06-24 09:59:12,473 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:12,482 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:12,484 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras 
+WHERE carreras.id = ?
+2024-06-24 09:59:12,489 - sqlalchemy.engine.Engine - INFO - [generated in 0.00393s] (1,)
+2024-06-24 09:59:12,490 - root - INFO - Carrera guardada en la base de datos: <Carrera(id=1, fecha_inicio=2024-06-24 09:59:09.102572, tarifa_final=2.618369116783142)>
+2024-06-24 09:59:12,491 - root - INFO - Carrera finalizada. Importe total:0.12 €
+2024-06-24 09:59:12,492 - root - INFO - Taxímetro restablecido.
+2024-06-24 09:59:12,492 - root - INFO - Botón 'Finalizar carrera' presionado.
+2024-06-24 09:59:16,444 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:16,445 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:16,447 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:16,448 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:16,452 - root - INFO - Menu seleccionado: Ver Log
+2024-06-24 09:59:23,510 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:23,511 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 09:59:23,512 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 09:59:23,514 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 09:59:23,517 - root - INFO - Menu seleccionado: Ver Historial
+2024-06-24 09:59:23,522 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 09:59:23,525 - sqlalchemy.engine.Engine - INFO - SELECT carreras.id AS carreras_id, carreras.fecha_inicio AS carreras_fecha_inicio, carreras.fecha_fin AS carreras_fecha_fin, carreras.tiempo_movimiento AS carreras_tiempo_movimiento, carreras.tiempo_parado AS carreras_tiempo_parado, carreras.tarifa_final AS carreras_tarifa_final 
+FROM carreras
+2024-06-24 09:59:23,528 - sqlalchemy.engine.Engine - INFO - [generated in 0.00371s] ()
+2024-06-24 10:01:02,193 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-06-24 10:01:02,195 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("carreras")
+2024-06-24 10:01:02,196 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-06-24 10:01:02,197 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-06-24 10:01:02,204 - root - INFO - Menu seleccionado: Taxímetro
+2024-06-24 10:01:02,204 - root - INFO - Taxímetro restablecido.
+2024-06-24 10:01:02,204 - root - INFO - Taxímetro inicializando con tarifas base.
