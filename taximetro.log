@@ -296,3 +296,612 @@
 2024-06-20 15:18:38,544 - root - INFO - Carrera iniciada.
 2024-06-20 15:18:38,544 - root - INFO - Tarifa actualizada.
 2024-06-20 15:18:38,544 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:21:09,184 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:21:09,184 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:21:09,184 - root - INFO - Carrera iniciada.
+2024-06-20 15:21:09,185 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:21:09,186 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:21:09,186 - root - INFO - Carrera iniciada.
+2024-06-20 15:21:09,186 - root - INFO - Tarifa actualizada.
+2024-06-20 15:21:09,186 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:25:08,002 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:25:08,003 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:25:08,003 - root - INFO - Carrera iniciada.
+2024-06-20 15:25:08,004 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:25:08,004 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:25:08,005 - root - INFO - Carrera iniciada.
+2024-06-20 15:25:08,005 - root - INFO - Tarifa actualizada.
+2024-06-20 15:25:08,005 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:26:35,076 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:26:35,077 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:26:35,077 - root - INFO - Carrera iniciada.
+2024-06-20 15:26:35,078 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:26:35,078 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:26:35,079 - root - INFO - Carrera iniciada.
+2024-06-20 15:26:35,079 - root - INFO - Tarifa actualizada.
+2024-06-20 15:26:35,080 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:36:24,116 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:36:24,116 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:36:24,117 - root - INFO - Carrera iniciada.
+2024-06-20 15:36:24,118 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:36:24,118 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:36:24,119 - root - INFO - Carrera iniciada.
+2024-06-20 15:36:24,119 - root - INFO - Tarifa actualizada.
+2024-06-20 15:36:24,119 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:40:46,271 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:40:46,271 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:40:46,273 - root - INFO - Carrera iniciada.
+2024-06-20 15:40:46,274 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:40:46,275 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:40:46,275 - root - INFO - Carrera iniciada.
+2024-06-20 15:40:46,275 - root - INFO - Tarifa actualizada.
+2024-06-20 15:40:46,275 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:51:29,121 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:51:29,121 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:51:29,122 - root - INFO - Carrera iniciada.
+2024-06-20 15:51:29,122 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:51:29,122 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:51:29,123 - root - INFO - Carrera iniciada.
+2024-06-20 15:51:29,123 - root - INFO - Tarifa actualizada.
+2024-06-20 15:51:29,123 - root - INFO - El taxi se ha puesto en marcha.
+2024-06-20 15:55:51,265 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:55:51,265 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:55:51,267 - root - INFO - Taxímetro restablecido.
+2024-06-20 15:55:51,267 - root - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 15:55:51,268 - root - INFO - Tarifa actualizada.
+2024-06-20 16:05:06,205 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:05:06,205 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:05:06,206 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:05:06,206 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:11:20,406 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:11:20,407 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:11:20,408 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:11:20,408 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:16:04,784 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:16:04,785 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:16:04,785 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:16:04,786 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:31:26,189 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:31:26,189 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 16:31:26,190 - root - INFO - Taxímetro restablecido.
+2024-06-20 16:31:26,190 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 19:48:18,701 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 19:48:18,722 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-20 19:48:18,724 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-20 19:48:18,724 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-21 14:39:37,063 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-21 14:39:37,063 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-21 14:39:37,067 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-21 14:39:37,067 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:26:49,867 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:26:49,869 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:26:49,871 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:26:49,871 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:28:29,441 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:28:29,442 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:28:29,458 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:28:29,459 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:28:29,460 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:28:29,461 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:28:29,461 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:28:29,462 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:35:38,010 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:35:38,011 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:35:38,013 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:35:38,014 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:35:38,015 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:35:38,016 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:35:38,016 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:35:38,017 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:43:56,847 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:43:56,848 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:43:56,850 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:43:56,851 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:43:56,853 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:43:56,854 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:43:56,855 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:43:56,855 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:43:56,856 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:43:56,856 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:43:56,858 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:43:56,858 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:47:11,630 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:47:11,630 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:47:12,634 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:47:12,634 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:47:12,636 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:47:12,636 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:47:12,637 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:47:12,638 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:47:12,639 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:47:12,639 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:47:12,640 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:47:12,641 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:50:37,698 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:50:37,699 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:50:37,705 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:50:37,706 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:50:37,706 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:50:37,707 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:50:37,708 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:50:37,708 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:50:37,709 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:50:37,709 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 16:50:37,713 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 16:50:37,713 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:05:11,359 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:05:11,359 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:05:11,362 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:05:11,363 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:05:11,364 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:05:11,365 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:05:11,366 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:05:11,366 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:05:11,367 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:05:11,368 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:05:11,369 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:05:11,369 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:07:50,971 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:07:50,972 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:07:50,976 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:07:50,976 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:07:50,977 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:07:50,977 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:07:50,978 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:07:50,979 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:07:50,980 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:07:50,980 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:07:50,981 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:07:50,982 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:09:42,587 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:09:42,587 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:09:42,592 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:09:42,592 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:09:42,592 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:09:42,593 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:09:42,594 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:09:42,595 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:09:42,595 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:09:42,596 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:09:42,597 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:09:42,598 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:10:58,659 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:10:58,660 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:10:58,663 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:10:58,664 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:10:58,665 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:10:58,665 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:10:58,667 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:10:58,667 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:10:58,667 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:10:58,668 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:10:58,670 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:10:58,670 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:13:10,968 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:13:10,968 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:13:10,976 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:13:10,977 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:13:10,977 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:13:10,978 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:13:10,979 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:13:10,979 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:13:10,980 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:13:10,980 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:13:10,982 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:13:10,982 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:14:59,892 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:14:59,892 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:14:59,897 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:14:59,897 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:14:59,898 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:14:59,899 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:14:59,902 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:14:59,902 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:14:59,903 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:14:59,903 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:14:59,904 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:14:59,905 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:21:02,766 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:21:02,766 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:21:02,770 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:21:02,770 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:21:02,771 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:21:02,772 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:21:02,773 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:21:02,774 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:21:02,774 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:21:02,775 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:21:02,776 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:21:02,777 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:23:42,542 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:23:42,542 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:23:42,547 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:23:42,548 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:23:42,550 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:23:42,550 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:23:42,551 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:23:42,551 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:23:42,552 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:23:42,553 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:23:42,553 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:23:42,554 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:23,210 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:23,211 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:23,212 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:23,212 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:44,286 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:44,286 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:44,290 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:44,291 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:44,291 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:44,292 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:44,292 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:44,293 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:44,294 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:44,295 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:25:44,295 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:25:44,296 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:07,392 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:07,393 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:07,395 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:07,395 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:17,918 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:17,918 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:17,922 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:17,923 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:17,923 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:17,924 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:17,924 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:17,925 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:17,926 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:17,927 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:27:17,927 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:27:17,928 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:28:31,675 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:28:31,676 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:28:31,679 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:28:31,680 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:28:31,681 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:28:31,682 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:28:31,682 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:28:31,683 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:28:31,683 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:28:31,684 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:28:31,687 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:28:31,687 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:30:07,124 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:30:07,125 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:30:07,129 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:30:07,130 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:30:07,130 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:30:07,131 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:30:07,132 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:30:07,133 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:30:07,133 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:30:07,134 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:30:07,134 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:30:07,135 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:31:39,459 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:31:39,459 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:31:39,463 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:31:39,464 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:31:39,465 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:31:39,466 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:31:39,467 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:31:39,467 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:31:39,468 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:31:39,469 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:31:39,470 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:31:39,470 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:32:49,255 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:32:49,256 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:32:49,260 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:32:49,260 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:32:49,261 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:32:49,262 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:32:49,263 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:32:49,263 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:32:49,265 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:32:49,265 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:32:49,266 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:32:49,267 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:34:31,920 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:34:31,921 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:34:31,924 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:34:31,924 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:34:31,926 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:34:31,927 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:34:31,928 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:34:31,928 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:34:31,929 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:34:31,929 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 17:34:31,930 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 17:34:31,931 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:09,387 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:09,388 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:09,391 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:09,391 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:20,895 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:20,895 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:20,899 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:20,899 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:20,900 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:20,901 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:20,901 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:20,902 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:20,903 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:20,903 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:04:20,904 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:04:20,906 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:06:00,528 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:06:00,528 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:06:00,533 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:06:00,533 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:06:00,534 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:06:00,535 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:06:00,535 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:06:00,536 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:06:00,537 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:06:00,538 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:06:00,539 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:06:00,539 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:07:33,882 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:07:33,882 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:07:33,887 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:07:33,888 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:07:33,889 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:07:33,889 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:07:33,890 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:07:33,891 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:07:33,891 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:07:33,892 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:07:33,892 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:07:33,893 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:17:57,391 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:17:57,391 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:17:57,402 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:17:57,403 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:17:57,403 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:17:57,404 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:17:57,405 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:17:57,406 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:17:57,406 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:17:57,407 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:17:57,407 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:17:57,408 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:20:45,276 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:20:45,276 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:20:45,284 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:20:45,284 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:20:45,285 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:20:45,285 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:20:45,287 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:20:45,287 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:20:45,287 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:20:45,288 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:20:45,289 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:20:45,290 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:23:03,167 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:23:03,168 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:23:03,174 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:23:03,174 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:23:03,175 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:23:03,176 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:23:03,177 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:23:03,177 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:23:03,177 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:23:03,179 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:23:03,180 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:23:03,180 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:25:23,368 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:25:23,368 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:25:23,376 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:25:23,376 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:25:23,377 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:25:23,378 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:25:23,379 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:25:23,379 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:25:23,382 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:25:23,382 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:25:23,383 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:25:23,384 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:27:03,694 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:27:03,695 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:27:03,698 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:27:03,699 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:27:03,700 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:27:03,700 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:27:03,701 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:27:03,701 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:27:03,702 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:27:03,702 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:27:03,704 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:27:03,704 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:29:39,859 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:29:39,860 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:29:39,864 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:29:39,864 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:29:39,867 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:29:39,867 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:29:39,868 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:29:39,868 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:29:39,869 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:29:39,869 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:29:39,870 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:29:39,870 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:40:34,385 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:40:34,386 - taxi_meter - INFO - Taxímetro restablecido.
+1970-01-01 01:00:00,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+1970-01-01 01:00:10,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:40:34,390 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:40:34,391 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:40:34,392 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:40:34,392 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:40:34,394 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:40:34,394 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:40:34,395 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:40:34,396 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:40:34,396 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:40:34,397 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:42:21,122 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:42:21,122 - taxi_meter - INFO - Taxímetro restablecido.
+1970-01-01 01:00:00,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+1970-01-01 01:00:10,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:42:21,126 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:42:21,127 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:42:21,128 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:42:21,128 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:42:21,130 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:42:21,130 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:42:21,131 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:42:21,132 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:42:21,133 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:42:21,134 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:43:46,407 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:43:46,407 - taxi_meter - INFO - Taxímetro restablecido.
+1970-01-01 01:00:00,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+1970-01-01 01:00:10,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:43:46,411 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:43:46,411 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:43:46,413 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:43:46,414 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:43:46,414 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:43:46,415 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:43:46,416 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:43:46,417 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:43:46,418 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:43:46,418 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:45:14,276 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:45:14,276 - taxi_meter - INFO - Taxímetro restablecido.
+1970-01-01 01:00:00,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+1970-01-01 01:00:10,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:45:14,280 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:45:14,281 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:45:14,282 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:45:14,282 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:45:14,284 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:45:14,284 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:45:14,285 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:45:14,285 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:45:14,286 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:45:14,287 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:46:40,760 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:46:40,761 - taxi_meter - INFO - Taxímetro restablecido.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:46:40,768 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:46:40,768 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:46:40,770 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:46:40,770 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:46:40,771 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:46:40,772 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:46:40,772 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:46:40,773 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:46:40,774 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:46:40,775 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:49:02,956 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:02,957 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:49:02,958 - Taximetro - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:02,959 - Taximetro - INFO - Taxímetro restablecido.
+2024-06-22 18:49:34,275 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:34,275 - taxi_meter - INFO - Taxímetro restablecido.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:49:34,278 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:34,279 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:49:34,280 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:34,280 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:49:34,282 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:34,282 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:49:34,282 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:34,283 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:49:34,284 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:49:34,285 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:50:40,919 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:50:40,920 - taxi_meter - INFO - Taxímetro restablecido.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:50:40,925 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:50:40,926 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:50:40,927 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:50:40,927 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:50:40,929 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:50:40,929 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:50:40,929 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:50:40,930 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:50:40,932 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:50:40,932 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:52:45,222 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:52:45,222 - taxi_meter - INFO - Taxímetro restablecido.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:52:45,226 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:52:45,227 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:52:45,228 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:52:45,229 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:52:45,230 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:52:45,230 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:52:45,231 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:52:45,232 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:52:45,233 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:52:45,233 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:54:33,708 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:54:33,708 - taxi_meter - INFO - Taxímetro restablecido.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2021-06-22 21:26:40,000 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:54:33,713 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:54:33,713 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:54:33,715 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:54:33,715 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:54:33,715 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:54:33,716 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:54:33,717 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:54:33,718 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 18:54:33,719 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 18:54:33,721 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 19:12:37,681 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 19:12:37,682 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 19:12:37,684 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 19:12:37,685 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 19:12:37,686 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 19:12:37,686 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 19:12:37,687 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 19:12:37,688 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-22 19:12:37,689 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-22 19:12:37,689 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 18:58:49,693 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 18:58:49,761 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 18:58:49,766 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 18:58:49,770 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 18:58:49,772 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 18:58:49,772 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 18:58:49,774 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 18:58:49,774 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 18:58:49,776 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 18:58:49,777 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 18:58:49,778 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 18:58:49,779 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:01:15,434 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:01:15,435 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:01:15,440 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:01:15,440 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:01:15,441 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:01:15,442 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:01:15,443 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:01:15,443 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:01:15,444 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:01:15,444 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:01:15,446 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:01:15,446 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:04:01,164 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:04:01,165 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:04:01,170 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:04:01,170 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:04:01,172 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:04:01,173 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:04:01,174 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:04:01,174 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:04:01,175 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:04:01,175 - taxi_meter - INFO - Taxímetro restablecido.
+2024-06-23 19:04:01,177 - taxi_meter - INFO - Taxímetro inicializando con tarifas base.
+2024-06-23 19:04:01,177 - taxi_meter - INFO - Taxímetro restablecido.

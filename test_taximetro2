@@ -24,5 +24,23 @@ class TestTaximetro(unittest.TestCase):
         self.assertEqual(len(self.taximetro.messages), 2)
         self.assertIn("El taxi se ha puesto en marcha", self.taximetro.messages[1])
 
+
+    def test_parar(self):
+        self.taximetro.iniciar()
+        self.taximetro.mover()
+        self.taximetro.parar()
+        self.assertTrue(self.taximetro.en_marcha)
+        self.assertFalse(self.taximetro.en_movimiento)
+        self.taximetro.logger.info.assert_called_with("El taxi se ha parado.")
+        self.assertEqual(len(self.taximetro.messages), 2)  # No new message added for stopping
+
+    def test_finalizar_carrera(self):
+        self.taximetro.iniciar()
+        self.taximetro.finalizar_carrera()
+        self.assertFalse(self.taximetro.en_marcha)
+        self.assertFalse(self.taximetro.en_movimiento)
+        self.taximetro.logger.info.assert_called_with(f"Carrera finalizada. Importe total: {self.taximetro.tarifa_total:.2f} €")
+        self.assertEqual(len(self.taximetro.messages), 1)  # No new message added for finishing
+
 if __name__ == '__main__':
     unittest.main()
