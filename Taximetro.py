@@ -3,12 +3,14 @@ from datetime import datetime
 import streamlit as st
 import logging
 
+# Biblioteca para bbdd
 from sqlalchemy import create_engine, Column, Integer, Float, DateTime, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
+# Función para bbdd.
 class Carrera(Base):
     __tablename__ = 'carreras'
     id = Column(Integer, primary_key=True)
@@ -21,11 +23,11 @@ class Carrera(Base):
     def __repr__(self):
         return f"<Carrera(id={self.id}, fecha_inicio={self.fecha_inicio}, tarifa_final={self.tarifa_final})>"
 
-# Crear la conexión a la base de datos
+# Crear la conexión con la bbdd.
 engine = create_engine('sqlite:///taximetro.db', echo=True)
 Base.metadata.create_all(engine)
 
-# Crear una sesión
+# Crear una sesión con la bbdd.
 Session = sessionmaker(bind=engine)
 session = Session()
 
@@ -154,6 +156,7 @@ def get_logger():
 
 logger = get_logger()
 
+# Funcion para leer fichero log.
 def leer_log():
     try:
         with open('taximetro.log', 'r') as file:
@@ -264,6 +267,7 @@ def main():
             elif menu_selection == "Ver Log":
                 st.markdown("### Visualización del Log")
                 st.text_area("", value=leer_log(), height=200)
+            # Menu para ver historial de carreras (bbdd) en Streamlit.    
             elif menu_selection == "Ver Historial":
                 st.markdown("### Historial de Carreras")
                 carreras = session.query(Carrera).all()
