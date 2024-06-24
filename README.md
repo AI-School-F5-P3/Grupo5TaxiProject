@@ -23,11 +23,15 @@ Taxi Driver es una aplicación que simula el funcionamiento de un taxímetro. Ca
 
 ## Instalación
 
-1. Clonar el repositorio:
+1. Crea un directorio en tu PC donde clonar el repositorio localmente.
+   ```sh
+    mk taxi-driver
+   ```
+2. Clonar el repositorio:
     ```sh
     git clone https://github.com/AI-School-F5-P3/Grupo5TaxiProject.git
     ```
-2. Navegar al directorio del proyecto:
+3. Navegar al directorio del proyecto:
     ```sh
     cd taxi-driver
     ```
