@@ -19,6 +19,7 @@ Taxi Driver es una aplicación que simula el funcionamiento de un taxímetro. Ca
 - SQLAlchemy
 - SQLite
 - Logging
+- Docker
 
 ## Instalación
 
@@ -41,7 +42,7 @@ Taxi Driver es una aplicación que simula el funcionamiento de un taxímetro. Ca
 
 1. Ejecutar la aplicación:
     ```sh
-    streamlit run app.py
+    streamlit run Taximetro.py
     ```
 2. Navegar a la interfaz de Streamlit que se abrirá en el navegador.
 
@@ -72,26 +73,14 @@ Proporciona detalles sobre el funcionamiento de la aplicación.
 
 ## Estructura del Código
 
-### `taximetro.py`
+### `Taximetro.py`
 
 Contiene la clase `Taximetro` que simula el funcionamiento del taxímetro, incluyendo métodos para iniciar, mover, parar y finalizar carreras, así como para actualizar tarifas y guardar carreras en la base de datos.
 
-### `app.py`
-
-Archivo principal que define la interfaz de usuario utilizando Streamlit. Incluye la lógica para navegar entre diferentes secciones del menú y para interactuar con la clase `Taximetro`.
-
-### `models.py`
-
 Define el modelo de la base de datos usando SQLAlchemy. Incluye la clase `Carrera` que representa una carrera en la base de datos.
-
-### `utils.py`
 
 Incluye funciones auxiliares como `get_logger` para configurar el logging, `leer_log` para leer el archivo de log, y `hash_string` para el hashing de contraseñas.
 
 ## Contribución
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para mejorar el proyecto.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
