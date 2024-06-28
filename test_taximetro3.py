@@ -7,8 +7,7 @@ class TestTaximetro(unittest.TestCase):
     def setUp(self):
         self.taximetro = Taximetro()
         self.taximetro.logger = MagicMock()
-        self.mock_time = MagicMock()
-        self.taximetro.time = self.mock_time
+        
 
     def test_iniciar(self):
         self.taximetro.iniciar()
