@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import MagicMock, patch
-from taxi_meter import Taximetro  # Asegúrate de que el nombre del módulo esté actualizado
-import time
+from taxi_meter import Taximetro  
+
 
 class TestTaximetro(unittest.TestCase):
     def setUp(self):
@@ -43,9 +43,6 @@ class TestTaximetro(unittest.TestCase):
         self.taximetro.logger.info.assert_any_call(f"Carrera finalizada. Importe total: {self.taximetro.tarifa_total:.2f} €")
         self.taximetro.logger.info.assert_any_call("Taxímetro restablecido.")
         self.assertEqual(len(self.taximetro.messages), 1)  
-
-    
-    
 
     def test_cambiar_precios(self):
         nueva_tarifa_movimiento = 4.0
